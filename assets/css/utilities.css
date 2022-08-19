@@ -1,0 +1,208 @@
+
+
+/* some resets */
+a{
+    text-decoration: none;
+    color: unset;
+}
+a:focus, a:hover{
+    color: unset;
+}
+img{
+    width: 100%;
+    display: block;
+}
+ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+button{
+    outline: 0;
+    border: none;
+    background-color: transparent;
+    transition: var(--transition)!important;
+}
+
+
+/* font families */
+.fnt-mukta{font-family: var(--fnt-mukta);}
+.fnt-opensans{font-family: var(--fnt-opensans);}
+.fnt-poppins{font-family: var(--fnt-poppins);}
+
+
+/* font weights */
+.fw-1{font-weight: 100;}
+.fw-1{font-weight: 100;}
+.fw-3{font-weight: 300;}
+.fw-4{font-weight: 400;}
+.fw-5{font-weight: 500;}
+.fw-6{font-weight: 600;}
+.fw-7{font-weight: 700;}
+.fw-8{font-weight: 800;}
+.fw-9{font-weight: 900;}
+
+/* font sizes */
+.fs-10{font-size: 10px;}
+.fs-12{font-size: 12px;}
+.fs-13{font-size: 13px;}
+.fs-14{font-size: 14px;}
+.fs-15{font-size: 15px;}
+.fs-16{font-size: 16px;}
+.fs-17{font-size: 17px;}
+.fs-18{font-size: 18px;}
+.fs-19{font-size: 19px;}
+.fs-20{font-size: 20px;}
+.fs-21{font-size: 21px;}
+.fs-22{font-size: 22px;}
+.fs-23{font-size: 23px;}
+.fs-24{font-size: 24px;}
+.fs-25{font-size: 25px;}
+.fs-30{font-size: 30px;}
+.fs-35{font-size: 35px;}
+.fs-37{font-size: 37px;}
+
+/* line heights */
+.lh-25{line-height: 25px;}
+.lh-49{line-height: 49px;}
+.lh-37h{line-height: 37.5px;}
+
+/* backgrounds stylings */
+.bg-cobalt{background-color: var(--clr-cobalt);}
+.bg-fs-red{background-color: var(--clr-free-speech-red);}
+.bg-white{background-color: var(--clr-white);}
+.bg-black{background-color: var(--clr-black);}
+.bg-lightblue{background-color: var(--clr-lightblue);}
+.bg-blue{background-color: var(--clr-blue);}
+
+/* text stylings */
+.text-white{color: var(--clr-white);}
+.text-black{color: var(--clr-black);}
+.text-dodger-blue{color: var(--clr-dodger-blue);}
+.text-suva-grey{color: var(--clr-suva-grey);}
+.text-blue{color: var(--clr-blue);}
+.text-cobalt{color: var(--clr-cobalt);}
+.text-fs-red{color: var(--clr-free-speech-red);}
+.text-grey38{color: var(--clr-grey35);}
+.text-royal-blue{color: var(--clr-royal-blue);}
+.text-grey68{color: var(--clr-grey68);}
+.text-black-80{color: var(--clr-black-80);}
+
+.text-justify{
+    margin: 0;
+    text-align: justify;
+}
+
+/* border radius */
+.border-r-1{border-radius: 1px;}
+.border-r-5{border-radius: 5px;}
+.border-r-9{border-radius: 9px;}
+.border-r-10{border-radius: 10px!important;}
+.border-r-20{border-radius: 20px;}
+.border-r-50{border-radius: 50%;}
+
+/* border */
+.border-black-20{border: 1px solid rgba(0, 0, 0, 0.20);}
+
+/* buttons stylings */
+.btn-dodger-blue-v1{
+    background-color: var(--clr-dodger-blue-variant-1);
+    height: 54px;
+    width: 100%;
+    border-radius: 1px;
+    box-shadow: 0px 4px 19px 0px #7793414D;
+    color: var(--clr-white);
+    transition: var(--transition);
+}
+.btn-dodger-blue-v1:hover{
+    background-color: #0075cb;
+    color: var(--clr-white);
+}
+.btn-blue{
+    background: #18369B;
+    border: 1px solid #18369B;
+    min-height: 45px;
+    padding: 5px 25px;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 10px;
+    color: var(--clr-white);
+    min-width: 172px;
+}
+.btn-radius{
+    border: 1px solid #00000026!important;
+    border-radius: 20px;
+    padding: 3px 20px;
+    text-align: center;
+    min-width: 140px;
+}
+
+/* img stylings */
+.img-cover img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* bootstrap resets */
+.container{
+    padding: 0;
+}
+.btn:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+/* logos */
+.logo-circle{
+    width: 128px;
+    height: 128px;
+    background-color: var(--clr-white);
+    overflow: hidden;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo-circle img{
+    width: 70px
+}
+
+/* stop animations */
+.resize-animation-stopper *{
+    animation: none!important;
+    transition: none!important;
+}
+
+/* texts */
+.primary-text{
+    font-family: var(--fnt-mukta);
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    color: #595959;
+}
+
+/* line heights */
+.lh-30{
+    line-height: 30px;
+}
+
+/* pills */
+.sm-pills{
+    border: 1px solid var(--clr-black-15);
+    border-radius: 20px;
+    padding: 1px 6px 1px 4px;
+}
+.sm-pills img{
+    width: 10px;
+}
+
+/* status icon width */
+.icon-fluid{width: 10px;}
+
+@media screen and (max-width: 576px){
+    .btn-blue{
+        min-width: 100%;
+    }
+}

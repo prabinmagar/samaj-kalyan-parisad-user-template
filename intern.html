@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "icon" type = "image/x-icon" href = "assets/images/site_logo.svg">
+    <title>समाज कल्याण परिषद्</title>
+    <!-- bootstrap -->
+    <link rel = "stylesheet" href = "assets/bootstrap-5.0.2-dist/css/bootstrap.css">
+    <!-- bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link rel = "stylesheet" href = "assets/css/utilities.css">
+    <link rel = "stylesheet" href = "assets/css/style.css">
+</head>
+<body>
+    <div class = "pg-intern fnt-mukta">
+        <header class = "pg-header">
+            <nav class = "pg-nav px-3">
+                <div class = "container h-100 d-flex align-items-center">
+                    <div class = "pg-nav-and-toggler d-flex align-items-center justify-content-between w-100">
+                        <a href = "dashboard.html" class = "d-flex align-items-center pg-nav-brand">
+                            <img src = "assets/images/site_logo.svg" alt = "site logo">
+                            <div class = "pg-nav-brand-text">
+                                <span class = "d-block fs-22">समाज कल्याण परिषद्</span>
+                                <span class = "text-blue fw-7 fs-35">सचिवलय</span>
+                            </div>
+                        </a>
+
+                        <div class = "pg-navbar-collapse">
+                            <button type = "button" class = "pg-nav-hide-btn fs-30 position-absolute">
+                                <i class="bi bi-x-circle"></i>
+                            </button>
+                            <ul class = "pg-navbar-nav">
+                                <li class = "pg-nav-item pb-3 pb-xl-0">
+                                    <a href = "#" class = "pg-nav-link fw-6 fs-12 d-flex align-items-center">
+                                        <img src = "assets/images/dashboard/approve_icon.svg" alt = "" class = "pg-nav-link-img">
+                                        <span class = "pg-nav-link-text ms-3">परियोजना स्वीकृति</span>
+                                    </a>
+                                </li>
+                                <li class = "pg-nav-item pb-3 pb-xl-0">
+                                    <a href = "#" class = "pg-nav-link fw-6 fs-12 d-flex align-items-center">
+                                        <img src = "assets/images/dashboard/blueprint_icon.svg" alt = "" class = "pg-nav-link-img">
+                                        <span class = "pg-nav-link-text ms-3">परियोजना सम्झौता</span>
+                                    </a>
+                                </li>
+                                <li class = "pg-nav-item pb-3 pb-xl-0">
+                                    <a href = "#" class = "pg-nav-link fw-6 fs-12 d-flex align-items-center">
+                                        <img src = "assets/images/dashboard/talking_icon.svg" alt = "" class = "pg-nav-link-img">
+                                        <span class = "pg-nav-link-text ms-3">सचिव ज्यूको दैनिक भेटघाट</span>
+                                    </a>
+                                </li>
+                                <li class = "pg-nav-item">
+                                    <a href = "#" class = "pg-nav-link fw-6 fs-12 d-flex align-items-center">
+                                        <img src = "assets/images/dashboard/calendar_icon.svg" alt = "" class = "pg-nav-link-img">
+                                        <span class = "pg-nav-link-text ms-3">सचिव ज्यूको दैनिक कार्यक्रम</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class = "pg-nav-btns d-flex align-items-center ms-auto me-5">
+                            <div class = "pg-nav-btn position-relative my-2">
+                                <img src = "assets/images/dashboard/bell_icon.svg" alt = "" class = "pg-nav-btn-img">
+                                <span class = "position-absolute top-0 start-100 translate-middle badge rounded-pill bg-fs-red">3</span>
+                            </div>
+
+                            <div class="pg-nav-btn dropdown my-2">
+                                <button class="btn dropdown-toggle p-0" type="button" id="navDropdown1" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <img src = "assets/images/dashboard/user_icon.svg" alt = "" class = "pg-nav-btn-img d-inline-block">
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="navDropdown1">
+                                  <li><a class="dropdown-item" href="#">See Profile</a></li>
+                                  <li><a class="dropdown-item" href="#">Settings</a></li>
+                                  <li><a class="dropdown-item" href="#">Logout</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <button type = "button" class = "pg-nav-show-btn fs-35">
+                            <i class="bi bi-list"></i>
+                        </button>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <div class = "pg-block-wrapper bg-lightblue">
+            <!-- pg block 1 -->
+            <div class = "pg-block-1 pg-block-internList py-5">
+                <div class = "pg-block-1-title bg-white py-4 px-3">
+                    <div class = "container">
+                        <h2 class = "fw-7 fs-22 mb-0">इन्टर्नको लागिे </h2>
+                    </div>
+                </div>
+                <div class = "container">
+                    <div class = "row mx-3 table-wrapper pg-block-scrollbar">
+                        <table class = "table table-striped bg-white mt-2 text-center">
+                            <thead>
+                                <tr>
+                                    <th class = "py-3">व्यक्तिको नाम</th>
+                                    <th class = "py-3">इन्टनको विषय</th>
+                                    <th class = "py-3">संथाको नाम</th>
+                                    <th class = "py-3">रिफरेन्स</th>
+                                    <th class = "py-3">Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class = "fw-6">
+                                    <td>राम कटेल</td>
+                                    <td>म्यानेजमेन्ट</td>
+                                    <td>plan international</td>
+                                    <td>राजराम कटेल</td>
+                                    <td>
+                                        <div class="tbl-dropdown position-relative">
+                                            <button type = "button" class = "tbl-dropdown-btn tbl-dropdown-btn-main bg-white d-flex align-items-center justify-content-between mx-auto">
+                                                <img src = "assets/images/intern/circle-icon-blue.svg" class = "tbl-dropdown-img">
+                                                <span class = "tbl-dropdown-text text-capitalize">Done</span>
+                                                <span class = "fs-14 tbl-dropdown-icon"><i class="bi bi-chevron-down"></i></span>
+                                            </button>  
+                                            <div class = "tbl-dropdown-list position-absolute">
+                                                <button type = "button" class = "tbl-dropdown-btn bg-white d-flex align-items-center justify-content-between">
+                                                    <img src = "assets/images/intern/circle-icon-blue.svg" class = "tbl-dropdown-img">
+                                                    <span class = "tbl-dropdown-text">Done</span>
+                                                    <span class = "fs-14 tbl-dropdown-icon"><i class="bi bi-chevron-down"></i></span>
+                                                </button>
+
+                                                <button type = "button" class = "tbl-dropdown-btn bg-white d-flex align-items-center justify-content-between">
+                                                    <img src = "assets/images/intern/circle-icon-green.svg" class = "tbl-dropdown-img">
+                                                    <span class = "tbl-dropdown-text">pending</span>
+                                                    <span class = "fs-14 tbl-dropdown-icon"><i class="bi bi-chevron-down"></i></span>
+                                                </button>
+
+                                                <button type = "button" class = "tbl-dropdown-btn bg-white d-flex align-items-center justify-content-between">
+                                                    <img src = "assets/images/intern/circle-icon-red.svg" class = "tbl-dropdown-img">
+                                                    <span class = "tbl-dropdown-text">reject</span>
+                                                    <span class = "fs-14 tbl-dropdown-icon"><i class="bi bi-chevron-down"></i></span>
+                                                </button>
+                                            </div>
+                                        </div> 
+                                    </td>
+                                </tr>
+
+                                <tr class = "fw-6">
+                                    <td>राम कटेल</td>
+                                    <td>म्यानेजमेन्ट</td>
+                                    <td>plan international</td>
+                                    <td>राजराम कटेल</td>
+                                    <td>
+                                        <div class="tbl-dropdown position-relative">
+                                            <button type = "button" class = "tbl-dropdown-btn tbl-dropdown-btn-main bg-white d-flex align-items-center justify-content-between mx-auto">
+                                                <img src = "assets/images/intern/circle-icon-blue.svg" class = "tbl-dropdown-img">
+                                                <span class = "tbl-dropdown-text text-capitalize">Done</span>
+                                                <span class = "fs-14 tbl-dropdown-icon"><i class="bi bi-chevron-down"></i></span>
+                                            </button>  
+                                            <div class = "tbl-dropdown-list position-absolute">
+                                                <button type = "button" class = "tbl-dropdown-btn bg-white d-flex align-items-center justify-content-between">
+                                                    <img src = "assets/images/intern/circle-icon-blue.svg" class = "tbl-dropdown-img">
+                                                    <span class = "tbl-dropdown-text">Done</span>
+                                                    <span class = "fs-14 tbl-dropdown-icon"><i class="bi bi-chevron-down"></i></span>
+                                                </button>
+
+                                                <button type = "button" class = "tbl-dropdown-btn bg-white d-flex align-items-center justify-content-between">
+                                                    <img src = "assets/images/intern/circle-icon-green.svg" class = "tbl-dropdown-img">
+                                                    <span class = "tbl-dropdown-text">pending</span>
+                                                    <span class = "fs-14 tbl-dropdown-icon"><i class="bi bi-chevron-down"></i></span>
+                                                </button>
+
+                                                <button type = "button" class = "tbl-dropdown-btn bg-white d-flex align-items-center justify-content-between">
+                                                    <img src = "assets/images/intern/circle-icon-red.svg" class = "tbl-dropdown-img">
+                                                    <span class = "tbl-dropdown-text">reject</span>
+                                                    <span class = "fs-14 tbl-dropdown-icon"><i class="bi bi-chevron-down"></i></span>
+                                                </button>
+                                            </div>
+                                        </div> 
+                                    </td>
+                                </tr>
+
+                                <tr class = "fw-6">
+                                    <td>राम कटेल</td>
+                                    <td>म्यानेजमेन्ट</td>
+                                    <td>plan international</td>
+                                    <td>राजराम कटेल</td>
+                                    <td>
+                                        <div class="tbl-dropdown position-relative">
+                                            <button type = "button" class = "tbl-dropdown-btn tbl-dropdown-btn-main bg-white d-flex align-items-center justify-content-between mx-auto">
+                                                <img src = "assets/images/intern/circle-icon-green.svg" class = "tbl-dropdown-img">
+                                                <span class = "tbl-dropdown-text text-capitalize">Pending</span>
+                                                <span class = "fs-14 tbl-dropdown-icon"><i class="bi bi-chevron-down"></i></span>
+                                            </button>  
+                                            <div class = "tbl-dropdown-list position-absolute">
+                                                <button type = "button" class = "tbl-dropdown-btn bg-white d-flex align-items-center justify-content-between">
+                                                    <img src = "assets/images/intern/circle-icon-blue.svg" class = "tbl-dropdown-img">
+                                                    <span class = "tbl-dropdown-text">Done</span>
+                                                    <span class = "fs-14 tbl-dropdown-icon"><i class="bi bi-chevron-down"></i></span>
+                                                </button>
+
+                                                <button type = "button" class = "tbl-dropdown-btn bg-white d-flex align-items-center justify-content-between">
+                                                    <img src = "assets/images/intern/circle-icon-green.svg" class = "tbl-dropdown-img">
+                                                    <span class = "tbl-dropdown-text">pending</span>
+                                                    <span class = "fs-14 tbl-dropdown-icon"><i class="bi bi-chevron-down"></i></span>
+                                                </button>
+
+                                                <button type = "button" class = "tbl-dropdown-btn bg-white d-flex align-items-center justify-content-between">
+                                                    <img src = "assets/images/intern/circle-icon-red.svg" class = "tbl-dropdown-img">
+                                                    <span class = "tbl-dropdown-text">reject</span>
+                                                    <span class = "fs-14 tbl-dropdown-icon"><i class="bi bi-chevron-down"></i></span>
+                                                </button>
+                                            </div>
+                                        </div> 
+                                    </td>
+                                </tr>
+
+                                <tr class = "fw-6">
+                                    <td>राम कटेल</td>
+                                    <td>म्यानेजमेन्ट</td>
+                                    <td>plan international</td>
+                                    <td>राजराम कटेल</td>
+                                    <td>
+                                        <div class="tbl-dropdown position-relative">
+                                            <button type = "button" class = "tbl-dropdown-btn tbl-dropdown-btn-main bg-white d-flex align-items-center justify-content-between mx-auto">
+                                                <img src = "assets/images/intern/circle-icon-blue.svg" class = "tbl-dropdown-img">
+                                                <span class = "tbl-dropdown-text text-capitalize">Done</span>
+                                                <span class = "fs-14 tbl-dropdown-icon"><i class="bi bi-chevron-down"></i></span>
+                                            </button>  
+                                            <div class = "tbl-dropdown-list position-absolute">
+                                                <button type = "button" class = "tbl-dropdown-btn bg-white d-flex align-items-center justify-content-between">
+                                                    <img src = "assets/images/intern/circle-icon-blue.svg" class = "tbl-dropdown-img">
+                                                    <span class = "tbl-dropdown-text">Done</span>
+                                                    <span class = "fs-14 tbl-dropdown-icon"><i class="bi bi-chevron-down"></i></span>
+                                                </button>
+
+                                                <button type = "button" class = "tbl-dropdown-btn bg-white d-flex align-items-center justify-content-between">
+                                                    <img src = "assets/images/intern/circle-icon-green.svg" class = "tbl-dropdown-img">
+                                                    <span class = "tbl-dropdown-text">pending</span>
+                                                    <span class = "fs-14 tbl-dropdown-icon"><i class="bi bi-chevron-down"></i></span>
+                                                </button>
+
+                                                <button type = "button" class = "tbl-dropdown-btn bg-white d-flex align-items-center justify-content-between">
+                                                    <img src = "assets/images/intern/circle-icon-red.svg" class = "tbl-dropdown-img">
+                                                    <span class = "tbl-dropdown-text">reject</span>
+                                                    <span class = "fs-14 tbl-dropdown-icon"><i class="bi bi-chevron-down"></i></span>
+                                                </button>
+                                            </div>
+                                        </div> 
+                                    </td>
+                                </tr>
+
+                                <tr class = "fw-6">
+                                    <td>राम कटेल</td>
+                                    <td>म्यानेजमेन्ट</td>
+                                    <td>plan international</td>
+                                    <td>राजराम कटेल</td>
+                                    <td>
+                                        <div class="tbl-dropdown position-relative">
+                                            <button type = "button" class = "tbl-dropdown-btn tbl-dropdown-btn-main bg-white d-flex align-items-center justify-content-between mx-auto">
+                                                <img src = "assets/images/intern/circle-icon-red.svg" class = "tbl-dropdown-img">
+                                                <span class = "tbl-dropdown-text text-capitalize">Reject</span>
+                                                <span class = "fs-14 tbl-dropdown-icon"><i class="bi bi-chevron-down"></i></span>
+                                            </button>  
+                                            <div class = "tbl-dropdown-list position-absolute">
+                                                <button type = "button" class = "tbl-dropdown-btn bg-white d-flex align-items-center justify-content-between">
+                                                    <img src = "assets/images/intern/circle-icon-blue.svg" class = "tbl-dropdown-img">
+                                                    <span class = "tbl-dropdown-text">Done</span>
+                                                    <span class = "fs-14 tbl-dropdown-icon"><i class="bi bi-chevron-down"></i></span>
+                                                </button>
+
+                                                <button type = "button" class = "tbl-dropdown-btn bg-white d-flex align-items-center justify-content-between">
+                                                    <img src = "assets/images/intern/circle-icon-green.svg" class = "tbl-dropdown-img">
+                                                    <span class = "tbl-dropdown-text">pending</span>
+                                                    <span class = "fs-14 tbl-dropdown-icon"><i class="bi bi-chevron-down"></i></span>
+                                                </button>
+
+                                                <button type = "button" class = "tbl-dropdown-btn bg-white d-flex align-items-center justify-content-between">
+                                                    <img src = "assets/images/intern/circle-icon-red.svg" class = "tbl-dropdown-img">
+                                                    <span class = "tbl-dropdown-text">reject</span>
+                                                    <span class = "fs-14 tbl-dropdown-icon"><i class="bi bi-chevron-down"></i></span>
+                                                </button>
+                                            </div>
+                                        </div> 
+                                    </td>
+                                </tr>
+
+                                <tr class = "fw-6">
+                                    <td>राम कटेल</td>
+                                    <td>म्यानेजमेन्ट</td>
+                                    <td>plan international</td>
+                                    <td>राजराम कटेल</td>
+                                    <td>
+                                        <div class="tbl-dropdown position-relative">
+                                            <button type = "button" class = "tbl-dropdown-btn tbl-dropdown-btn-main bg-white d-flex align-items-center justify-content-between mx-auto">
+                                                <img src = "assets/images/intern/circle-icon-blue.svg" class = "tbl-dropdown-img">
+                                                <span class = "tbl-dropdown-text text-capitalize">Done</span>
+                                                <span class = "fs-14 tbl-dropdown-icon"><i class="bi bi-chevron-down"></i></span>
+                                            </button>  
+                                            <div class = "tbl-dropdown-list position-absolute">
+                                                <button type = "button" class = "tbl-dropdown-btn bg-white d-flex align-items-center justify-content-between">
+                                                    <img src = "assets/images/intern/circle-icon-blue.svg" class = "tbl-dropdown-img">
+                                                    <span class = "tbl-dropdown-text">Done</span>
+                                                    <span class = "fs-14 tbl-dropdown-icon"><i class="bi bi-chevron-down"></i></span>
+                                                </button>
+
+                                                <button type = "button" class = "tbl-dropdown-btn bg-white d-flex align-items-center justify-content-between">
+                                                    <img src = "assets/images/intern/circle-icon-green.svg" class = "tbl-dropdown-img">
+                                                    <span class = "tbl-dropdown-text">pending</span>
+                                                    <span class = "fs-14 tbl-dropdown-icon"><i class="bi bi-chevron-down"></i></span>
+                                                </button>
+
+                                                <button type = "button" class = "tbl-dropdown-btn bg-white d-flex align-items-center justify-content-between">
+                                                    <img src = "assets/images/intern/circle-icon-red.svg" class = "tbl-dropdown-img">
+                                                    <span class = "tbl-dropdown-text">reject</span>
+                                                    <span class = "fs-14 tbl-dropdown-icon"><i class="bi bi-chevron-down"></i></span>
+                                                </button>
+                                            </div>
+                                        </div> 
+                                    </td>
+                                </tr>
+
+                                <tr class = "fw-6">
+                                    <td>राम कटेल</td>
+                                    <td>म्यानेजमेन्ट</td>
+                                    <td>plan international</td>
+                                    <td>राजराम कटेल</td>
+                                    <td>
+                                        <div class="tbl-dropdown position-relative">
+                                            <button type = "button" class = "tbl-dropdown-btn tbl-dropdown-btn-main bg-white d-flex align-items-center justify-content-between mx-auto">
+                                                <img src = "assets/images/intern/circle-icon-blue.svg" class = "tbl-dropdown-img">
+                                                <span class = "tbl-dropdown-text text-capitalize">Done</span>
+                                                <span class = "fs-14 tbl-dropdown-icon"><i class="bi bi-chevron-down"></i></span>
+                                            </button>  
+                                            <div class = "tbl-dropdown-list position-absolute">
+                                                <button type = "button" class = "tbl-dropdown-btn bg-white d-flex align-items-center justify-content-between">
+                                                    <img src = "assets/images/intern/circle-icon-blue.svg" class = "tbl-dropdown-img">
+                                                    <span class = "tbl-dropdown-text">Done</span>
+                                                    <span class = "fs-14 tbl-dropdown-icon"><i class="bi bi-chevron-down"></i></span>
+                                                </button>
+
+                                                <button type = "button" class = "tbl-dropdown-btn bg-white d-flex align-items-center justify-content-between">
+                                                    <img src = "assets/images/intern/circle-icon-green.svg" class = "tbl-dropdown-img">
+                                                    <span class = "tbl-dropdown-text">pending</span>
+                                                    <span class = "fs-14 tbl-dropdown-icon"><i class="bi bi-chevron-down"></i></span>
+                                                </button>
+
+                                                <button type = "button" class = "tbl-dropdown-btn bg-white d-flex align-items-center justify-content-between">
+                                                    <img src = "assets/images/intern/circle-icon-red.svg" class = "tbl-dropdown-img">
+                                                    <span class = "tbl-dropdown-text">reject</span>
+                                                    <span class = "fs-14 tbl-dropdown-icon"><i class="bi bi-chevron-down"></i></span>
+                                                </button>
+                                            </div>
+                                        </div> 
+                                    </td>
+                                </tr>
+
+                                <tr class = "fw-6">
+                                    <td>राम कटेल</td>
+                                    <td>म्यानेजमेन्ट</td>
+                                    <td>plan international</td>
+                                    <td>राजराम कटेल</td>
+                                    <td>
+                                        <div class="tbl-dropdown position-relative">
+                                            <button type = "button" class = "tbl-dropdown-btn tbl-dropdown-btn-main bg-white d-flex align-items-center justify-content-between mx-auto">
+                                                <img src = "assets/images/intern/circle-icon-blue.svg" class = "tbl-dropdown-img">
+                                                <span class = "tbl-dropdown-text text-capitalize">Done</span>
+                                                <span class = "fs-14 tbl-dropdown-icon"><i class="bi bi-chevron-down"></i></span>
+                                            </button>  
+                                            <div class = "tbl-dropdown-list position-absolute">
+                                                <button type = "button" class = "tbl-dropdown-btn bg-white d-flex align-items-center justify-content-between">
+                                                    <img src = "assets/images/intern/circle-icon-blue.svg" class = "tbl-dropdown-img">
+                                                    <span class = "tbl-dropdown-text">Done</span>
+                                                    <span class = "fs-14 tbl-dropdown-icon"><i class="bi bi-chevron-down"></i></span>
+                                                </button>
+
+                                                <button type = "button" class = "tbl-dropdown-btn bg-white d-flex align-items-center justify-content-between">
+                                                    <img src = "assets/images/intern/circle-icon-green.svg" class = "tbl-dropdown-img">
+                                                    <span class = "tbl-dropdown-text">pending</span>
+                                                    <span class = "fs-14 tbl-dropdown-icon"><i class="bi bi-chevron-down"></i></span>
+                                                </button>
+
+                                                <button type = "button" class = "tbl-dropdown-btn bg-white d-flex align-items-center justify-content-between">
+                                                    <img src = "assets/images/intern/circle-icon-red.svg" class = "tbl-dropdown-img">
+                                                    <span class = "tbl-dropdown-text">reject</span>
+                                                    <span class = "fs-14 tbl-dropdown-icon"><i class="bi bi-chevron-down"></i></span>
+                                                </button>
+                                            </div>
+                                        </div> 
+                                    </td>
+                                </tr>
+
+                                <tr class = "fw-6">
+                                    <td>राम कटेल</td>
+                                    <td>म्यानेजमेन्ट</td>
+                                    <td>plan international</td>
+                                    <td>राजराम कटेल</td>
+                                    <td>
+                                        <div class="tbl-dropdown position-relative">
+                                            <button type = "button" class = "tbl-dropdown-btn tbl-dropdown-btn-main bg-white d-flex align-items-center justify-content-between mx-auto">
+                                                <img src = "assets/images/intern/circle-icon-green.svg" class = "tbl-dropdown-img">
+                                                <span class = "tbl-dropdown-text text-capitalize">Pending</span>
+                                                <span class = "fs-14 tbl-dropdown-icon"><i class="bi bi-chevron-down"></i></span>
+                                            </button>  
+                                            <div class = "tbl-dropdown-list position-absolute">
+                                                <button type = "button" class = "tbl-dropdown-btn bg-white d-flex align-items-center justify-content-between">
+                                                    <img src = "assets/images/intern/circle-icon-blue.svg" class = "tbl-dropdown-img">
+                                                    <span class = "tbl-dropdown-text">Done</span>
+                                                    <span class = "fs-14 tbl-dropdown-icon"><i class="bi bi-chevron-down"></i></span>
+                                                </button>
+
+                                                <button type = "button" class = "tbl-dropdown-btn bg-white d-flex align-items-center justify-content-between">
+                                                    <img src = "assets/images/intern/circle-icon-green.svg" class = "tbl-dropdown-img">
+                                                    <span class = "tbl-dropdown-text">pending</span>
+                                                    <span class = "fs-14 tbl-dropdown-icon"><i class="bi bi-chevron-down"></i></span>
+                                                </button>
+
+                                                <button type = "button" class = "tbl-dropdown-btn bg-white d-flex align-items-center justify-content-between">
+                                                    <img src = "assets/images/intern/circle-icon-red.svg" class = "tbl-dropdown-img">
+                                                    <span class = "tbl-dropdown-text">reject</span>
+                                                    <span class = "fs-14 tbl-dropdown-icon"><i class="bi bi-chevron-down"></i></span>
+                                                </button>
+                                            </div>
+                                        </div> 
+                                    </td>
+                                </tr>
+
+                                <tr class = "fw-6">
+                                    <td>राम कटेल</td>
+                                    <td>म्यानेजमेन्ट</td>
+                                    <td>plan international</td>
+                                    <td>राजराम कटेल</td>
+                                    <td>
+                                        <div class="tbl-dropdown position-relative">
+                                            <button type = "button" class = "tbl-dropdown-btn tbl-dropdown-btn-main bg-white d-flex align-items-center justify-content-between mx-auto">
+                                                <img src = "assets/images/intern/circle-icon-blue.svg" class = "tbl-dropdown-img">
+                                                <span class = "tbl-dropdown-text text-capitalize">Done</span>
+                                                <span class = "fs-14 tbl-dropdown-icon"><i class="bi bi-chevron-down"></i></span>
+                                            </button>  
+                                            <div class = "tbl-dropdown-list position-absolute">
+                                                <button type = "button" class = "tbl-dropdown-btn bg-white d-flex align-items-center justify-content-between">
+                                                    <img src = "assets/images/intern/circle-icon-blue.svg" class = "tbl-dropdown-img">
+                                                    <span class = "tbl-dropdown-text">Done</span>
+                                                    <span class = "fs-14 tbl-dropdown-icon"><i class="bi bi-chevron-down"></i></span>
+                                                </button>
+
+                                                <button type = "button" class = "tbl-dropdown-btn bg-white d-flex align-items-center justify-content-between">
+                                                    <img src = "assets/images/intern/circle-icon-green.svg" class = "tbl-dropdown-img">
+                                                    <span class = "tbl-dropdown-text">pending</span>
+                                                    <span class = "fs-14 tbl-dropdown-icon"><i class="bi bi-chevron-down"></i></span>
+                                                </button>
+
+                                                <button type = "button" class = "tbl-dropdown-btn bg-white d-flex align-items-center justify-content-between">
+                                                    <img src = "assets/images/intern/circle-icon-red.svg" class = "tbl-dropdown-img">
+                                                    <span class = "tbl-dropdown-text">reject</span>
+                                                    <span class = "fs-14 tbl-dropdown-icon"><i class="bi bi-chevron-down"></i></span>
+                                                </button>
+                                            </div>
+                                        </div> 
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <!-- end of block 1 -->
+        </div>
+
+        <footer class = "pg-footer px-3 py-4 bg-lightblue border-black-20">
+            <div class = "container">  
+                <a href = "dashboard.html" class = "d-flex align-items-center justify-content-center pg-nav-brand pg-nav-brand-footer">
+                    <img src = "assets/images/site_logo.svg" alt = "site logo">
+                    <div class = "pg-nav-brand-text">
+                        <span class = "d-block fs-22">समाज कल्याण परिषद्</span>
+                        <span class = "text-blue fw-7 fs-35">सचिवलय</span>
+                    </div>
+                </a>
+            </div>
+        </footer>
+    </div>
+
+
+    <!-- scripts -->
+    <script src = "assets/js/jquery-3.6.0.js"></script>
+    <script src = "assets/bootstrap-5.0.2-dist/js/bootstrap.bundle.js"></script>
+    <script src = "assets/js/script.js"></script>
+</body>
+</html>

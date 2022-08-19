@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "icon" type = "image/x-icon" href = "assets/images/site_logo.svg">
+    <title>समाज कल्याण परिषद्</title>
+    <!-- bootstrap -->
+    <link rel = "stylesheet" href = "assets/bootstrap-5.0.2-dist/css/bootstrap.css">
+    <!-- bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link rel = "stylesheet" href = "assets/css/utilities.css">
+    <link rel = "stylesheet" href = "assets/css/style.css">
+</head>
+<body>
+    <div class = "pg-dashboard fnt-mukta">
+        <header class = "pg-header">
+            <nav class = "pg-nav px-3">
+                <div class = "container h-100 d-flex align-items-center">
+                    <div class = "pg-nav-and-toggler d-flex align-items-center justify-content-between w-100">
+                        <a href = "dashboard.html" class = "d-flex align-items-center pg-nav-brand">
+                            <img src = "assets/images/site_logo.svg" alt = "site logo">
+                            <div class = "pg-nav-brand-text">
+                                <span class = "d-block fs-22">समाज कल्याण परिषद्</span>
+                                <span class = "text-blue fw-7 fs-35">सचिवलय</span>
+                            </div>
+                        </a>
+
+                        <div class = "pg-navbar-collapse">
+                            <button type = "button" class = "pg-nav-hide-btn fs-30 position-absolute">
+                                <i class="bi bi-x-circle"></i>
+                            </button>
+                            <ul class = "pg-navbar-nav">
+                                <li class = "pg-nav-item pb-3 pb-xl-0">
+                                    <a href = "#" class = "pg-nav-link fw-6 fs-12 d-flex align-items-center">
+                                        <img src = "assets/images/dashboard/approve_icon.svg" alt = "" class = "pg-nav-link-img">
+                                        <span class = "pg-nav-link-text ms-3">परियोजना स्वीकृति</span>
+                                    </a>
+                                </li>
+                                <li class = "pg-nav-item pb-3 pb-xl-0">
+                                    <a href = "#" class = "pg-nav-link fw-6 fs-12 d-flex align-items-center">
+                                        <img src = "assets/images/dashboard/blueprint_icon.svg" alt = "" class = "pg-nav-link-img">
+                                        <span class = "pg-nav-link-text ms-3">परियोजना सम्झौता</span>
+                                    </a>
+                                </li>
+                                <li class = "pg-nav-item pb-3 pb-xl-0">
+                                    <a href = "#" class = "pg-nav-link fw-6 fs-12 d-flex align-items-center">
+                                        <img src = "assets/images/dashboard/talking_icon.svg" alt = "" class = "pg-nav-link-img">
+                                        <span class = "pg-nav-link-text ms-3">सचिव ज्यूको दैनिक भेटघाट</span>
+                                    </a>
+                                </li>
+                                <li class = "pg-nav-item">
+                                    <a href = "#" class = "pg-nav-link fw-6 fs-12 d-flex align-items-center">
+                                        <img src = "assets/images/dashboard/calendar_icon.svg" alt = "" class = "pg-nav-link-img">
+                                        <span class = "pg-nav-link-text ms-3">सचिव ज्यूको दैनिक कार्यक्रम</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class = "pg-nav-btns d-flex align-items-center ms-auto me-5">
+                            <div class = "pg-nav-btn position-relative my-2">
+                                <img src = "assets/images/dashboard/bell_icon.svg" alt = "" class = "pg-nav-btn-img">
+                                <span class = "position-absolute top-0 start-100 translate-middle badge rounded-pill bg-fs-red">3</span>
+                            </div>
+
+                            <div class="pg-nav-btn dropdown my-2">
+                                <button class="btn dropdown-toggle p-0" type="button" id="navDropdown1" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <img src = "assets/images/dashboard/user_icon.svg" alt = "" class = "pg-nav-btn-img d-inline-block">
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="navDropdown1">
+                                  <li><a class="dropdown-item" href="#">See Profile</a></li>
+                                  <li><a class="dropdown-item" href="#">Settings</a></li>
+                                  <li><a class="dropdown-item" href="#">Logout</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <button type = "button" class = "pg-nav-show-btn fs-35">
+                            <i class="bi bi-list"></i>
+                        </button>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <div class = "pg-block-wrapper bg-lightblue px-3">
+            <!-- pg block 1 -->
+            <div class = "pg-block-1 pg-block-notifications py-5">
+                <div class = "container">
+                    <div class = "row mb-4">
+                        <!-- item -->
+                        <div class = "col-md-6 col-lg-4 mb-4">
+                            <div class = "pg-block-item position-relative bg-white border-r-5">
+                                <button type = "button" class = "pg-block-item-close-btn position-absolute fs-25">
+                                    <i class="bi bi-x"></i>
+                                </button>
+                                <div class = "pg-block-item-top d-flex align-items-center mb-4">
+                                    <span class = "pg-block-item-icon text-cobalt me-2 mt-1">
+                                        <i class="bi bi-chat-left-dots-fill"></i>
+                                    </span>
+                                    <span class = "fw-6 fnt-opensans text-fs-red">New Notification</span>
+                                </div>
+                                <p class = "primary-text ms-4 mb-0">आज  २:३० मा गैर अवसीय संस्थ प्लान ईन्टरनेशनल संगको भेटघाट हाल सडक बालबालिकाहरुले भोग्दै आएको समस्यलाई हल गर्ने उदेश्य</p>
+                            </div>
+                        </div>
+                        <!-- end of item -->
+
+                        <!-- item -->
+                        <div class = "col-md-6 col-lg-4 mb-4">
+                            <div class = "pg-block-item position-relative bg-white border-r-5">
+                                <button type = "button" class = "pg-block-item-close-btn position-absolute fs-25">
+                                    <i class="bi bi-x"></i>
+                                </button>
+                                <div class = "pg-block-item-top d-flex align-items-center mb-4">
+                                    <span class = "pg-block-item-icon text-cobalt me-2 mt-1">
+                                        <i class="bi bi-chat-left-dots-fill"></i>
+                                    </span>
+                                    <span class = "fw-6 fnt-opensans text-fs-red">New Notification</span>
+                                </div>
+                                <p class = "primary-text ms-4 mb-0">आज  २:३० मा गैर अवसीय संस्थ प्लान ईन्टरनेशनल संगको भेटघाट हाल सडक बालबालिकाहरुले भोग्दै आएको समस्यलाई हल गर्ने उदेश्य</p>
+                            </div>
+                        </div>
+                        <!-- end of item -->
+
+                        <!-- item  -->
+                        <div class = "col-md-6 col-lg-4">
+                            <div class = "pg-block-item position-relative bg-white border-r-5">
+                                <button type = "button" class = "pg-block-item-close-btn position-absolute fs-25">
+                                    <i class="bi bi-x"></i>
+                                </button>
+                                <div class = "pg-block-item-top d-flex align-items-center mb-4">
+                                    <span class = "pg-block-item-icon text-cobalt me-2 mt-1">
+                                        <i class="bi bi-chat-left-dots-fill"></i>
+                                    </span>
+                                    <span class = "fw-6 fnt-opensans text-fs-red">New Notification</span>
+                                </div>
+                                <p class = "primary-text ms-4 mb-0">आज  २:३० मा गैर अवसीय संस्थ प्लान ईन्टरनेशनल संगको भेटघाट हाल सडक बालबालिकाहरुले भोग्दै आएको समस्यलाई हल गर्ने उदेश्य</p>
+                            </div>
+                        </div>
+                        <!-- end of item -->
+                    </div>
+
+                    <div class = "row mb-4">
+                        <div class = "col-12">
+                            <div class = "pg-block-item pg-block-item-full position-relative bg-white py-4 px-5 border-r-5">
+                                <div class = "border-left-line"></div>
+                                <button type = "button" class = "pg-block-item-close-btn position-absolute fs-25">
+                                    <i class="bi bi-x"></i>
+                                </button>
+
+                                <p class = "primary-text ms-4 mb-0">२०७६ चैत्र ११ गतेदेखि लकडाउन सुरु गर्यो । त्यसलगत्तै समाज कल्याण परिषद्ले नेपालमा कार्यरत राष्ट्रिय तथा अन्तर्राष्ट्रिय गैरसरकारी संस्थाहरुको काम कारबाहीलाई थप प्रभावकारी बनाउँदै वैदेशिक सहयोगलाई छिटो छरितो र सहज रुपमा लक्षित समुदायमा पु¥याउन सहजीकरणको प्रभावकारी भूमिका निर्वाह गर्दै आइरहेको छ । </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class = "pg-block-wrapper bg-white px-3">
+            <!-- pg block 2 -->
+            <div class = "pg-block-2 py-5">
+                <div class = "container">
+                    <div class = "row mb-4 gy-4 gy-lg-0">
+                        <!-- item -->
+                        <div class = "col-md-6 col-lg-4">
+                            <div class = "pg-block-item border-r-10 text-white text-center d-flex flex-column align-items-center justify-content-center">
+                                <h3 class = "fw-8 fs-20">परियोजना  सम्झौता</h3>
+                                <div class = "fw-8 pg-block-item-value">५०</div>
+                            </div>
+                        </div>
+                        <!-- end of item -->
+                        <!-- item -->
+                        <div class = "col-md-6 col-lg-4">
+                            <div class = "pg-block-item border-r-10 text-white text-center d-flex flex-column align-items-center justify-content-center">
+                                <h3 class = "fw-8 fs-20">परियोजना  सम्झौता</h3>
+                                <div class = "fw-8 pg-block-item-value">५०</div>
+                            </div>
+                        </div>
+                        <!-- end of item -->
+                        <!-- item -->
+                        <div class = "col-md-6 col-lg-4">
+                            <div class = "pg-block-item border-r-10 text-white text-center d-flex flex-column align-items-center justify-content-center">
+                                <h3 class = "fw-8 fs-20">परियोजना  सम्झौता</h3>
+                                <div class = "fw-8 pg-block-item-value">५०</div>
+                            </div>
+                        </div>
+                        <!-- end of item -->
+                    </div>
+                </div>
+            </div>
+            <!-- end of pg block 2 -->
+        </div>
+
+        <div class = "pg-block-wrapper bg-lightblue px-3">
+            <!-- pg block 3 -->
+            <div class = "pg-block-3 pt-5">
+                <div class = "container">
+                    <div class = "row">
+                        <div class = "col-lg-6 col-left">
+                            <div class = "pg-block-left bg-white pg-block-schedule border-black-20 border-r-20">
+                                <div class = "pg-block-left-top d-md-flex align-items-md-center justify-content-md-between p-4">
+                                    <h3 class = "fw-7 fs-25 m-0">कार्यतालिका</h3>
+
+                                    <div class = "pg-block-btns mt-3 mt-md-0">
+                                        <button type = "button" class = "pg-block-btn border-black-20 border-r-5 pg-block-btn-active">आज</button>
+                                        <button type = "button" class = "pg-block-btn border-black-20 border-r-5 ms-2">भोलि</button>
+                                        <button type = "button" class = "pg-block-btn border-black-20 border-r-5 ms-2">साप्ताहिक</button>
+                                    </div>
+                                </div>
+
+                                <div class = "pg-block-left-content pg-block-scrollbar">
+                                    <div class = "row">
+                                        <div class = "col-md-6 p-0">
+                                            <div class = "border-black-20 pg-block-left-item">
+                                                <h5 class = "fs-18 fw-7 lh-30">मेयरलाई फोन गर्नुहोस्</h5>
+                                                <div class = "d-flex align-items-center justify-content-between">
+                                                    <div class = "d-flex align-items-center">
+                                                        <span class = "me-2"><i class="bi bi-clock"></i></span>
+                                                        <span class = "fw-4 fs-14">३:३० PM</span>
+                                                    </div>
+                                                    <img src = "assets/images/icons/star_icon.svg" class = "pg-block-left-item-icon">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class = "col-md-6 p-0">
+                                            <div class = "border-black-20 pg-block-left-item">
+                                                <h5 class = "fs-18 fw-7 lh-30">मेयरलाई फोन गर्नुहोस्</h5>
+                                                <div class = "d-flex align-items-center justify-content-between">
+                                                    <div class = "d-flex align-items-center">
+                                                        <span class = "me-2"><i class="bi bi-clock"></i></span>
+                                                        <span class = "fw-4 fs-14">३:३० PM</span>
+                                                    </div>
+                                                    <img src = "assets/images/icons/star_icon.svg" class = "pg-block-left-item-icon">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class = "col-md-6 p-0">
+                                            <div class = "border-black-20 pg-block-left-item">
+                                                <h5 class = "fs-18 fw-7 lh-30">मेयरलाई फोन गर्नुहोस्</h5>
+                                                <div class = "d-flex align-items-center justify-content-between">
+                                                    <div class = "d-flex align-items-center">
+                                                        <span class = "me-2"><i class="bi bi-clock"></i></span>
+                                                        <span class = "fw-4 fs-14">३:३० PM</span>
+                                                    </div>
+                                                    <img src = "assets/images/icons/star_yellow_icon.svg" class = "pg-block-left-item-icon">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class = "col-md-6 p-0">
+                                            <div class = "border-black-20 pg-block-left-item">
+                                                <h5 class = "fs-18 fw-7 lh-30">मेयरलाई फोन गर्नुहोस्</h5>
+                                                <div class = "d-flex align-items-center justify-content-between">
+                                                    <div class = "d-flex align-items-center">
+                                                        <span class = "me-2"><i class="bi bi-clock"></i></span>
+                                                        <span class = "fw-4 fs-14">३:३० PM</span>
+                                                    </div>
+                                                    <img src = "assets/images/icons/star_yellow_icon.svg" class = "pg-block-left-item-icon">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class = "col-md-6 p-0">
+                                            <div class = "border-black-20 pg-block-left-item">
+                                                <h5 class = "fs-18 fw-7 lh-30">मेयरलाई फोन गर्नुहोस्</h5>
+                                                <div class = "d-flex align-items-center justify-content-between">
+                                                    <div class = "d-flex align-items-center">
+                                                        <span class = "me-2"><i class="bi bi-clock"></i></span>
+                                                        <span class = "fw-4 fs-14">३:३० PM</span>
+                                                    </div>
+                                                    <img src = "assets/images/icons/star_icon.svg" class = "pg-block-left-item-icon">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class = "col-md-6 p-0">
+                                            <div class = "border-black-20 pg-block-left-item">
+                                                <h5 class = "fs-18 fw-7 lh-30">मेयरलाई फोन गर्नुहोस्</h5>
+                                                <div class = "d-flex align-items-center justify-content-between">
+                                                    <div class = "d-flex align-items-center">
+                                                        <span class = "me-2"><i class="bi bi-clock"></i></span>
+                                                        <span class = "fw-4 fs-14">३:३० PM</span>
+                                                    </div>
+                                                    <img src = "assets/images/icons/star_icon.svg" class = "pg-block-left-item-icon">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class = "col-md-6 p-0">
+                                            <div class = "border-black-20 pg-block-left-item">
+                                                <h5 class = "fs-18 fw-7 lh-30">मेयरलाई फोन गर्नुहोस्</h5>
+                                                <div class = "d-flex align-items-center justify-content-between">
+                                                    <div class = "d-flex align-items-center">
+                                                        <span class = "me-2"><i class="bi bi-clock"></i></span>
+                                                        <span class = "fw-4 fs-14">३:३० PM</span>
+                                                    </div>
+                                                    <img src = "assets/images/icons/star_yellow_icon.svg" class = "pg-block-left-item-icon">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class = "col-md-6 p-0">
+                                            <div class = "border-black-20 pg-block-left-item">
+                                                <h5 class = "fs-18 fw-7 lh-30">मेयरलाई फोन गर्नुहोस्</h5>
+                                                <div class = "d-flex align-items-center justify-content-between">
+                                                    <div class = "d-flex align-items-center">
+                                                        <span class = "me-2"><i class="bi bi-clock"></i></span>
+                                                        <span class = "fw-4 fs-14">३:३० PM</span>
+                                                    </div>
+                                                    <img src = "assets/images/icons/star_yellow_icon.svg" class = "pg-block-left-item-icon">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class = "col-lg-6 col-right">
+                            <!-- right col calender -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end of pg block 3 -->
+        </div>
+
+        <div class = "pg-block-wrapper bg-lightblue px-3 pb-5">
+            <!-- pg block 4 -->
+            <div class = "pg-block-4">
+                <div class = "container">
+                    <div class = "row">
+                        <div class = "col-lg-6 col-left mt-4">
+                            <div class = "pg-block-left bg-white border-black-20 border-r-20 p-3 p-sm-5">
+                                <div class = "pg-block-left-content">
+                                    <div class = "row gy-4">
+                                        <div class = "col-md-6 p-0">
+                                            <a href = "#" class = "pg-block-left-item d-flex flex-column align-items-center justify-content-center text-center border-black-20 p-4 border-r-5 mx-4 my-sm-3">
+                                                <img src = "assets/images/dashboard/quick_links_ico_1.svg" class = "pg-block-left-item-img">
+                                                <h5 class = "fw-7 fs-18 mt-3">साधारण सम्झौता</h5>
+                                            </a>
+                                        </div>
+
+                                        <div class = "col-md-6 p-0">
+                                            <a href = "#" class = "pg-block-left-item d-flex flex-column align-items-center justify-content-center text-center border-black-20 p-4 border-r-5 mx-4 my-sm-3">
+                                                <img src = "assets/images/dashboard/quick_links_ico_2.svg" class = "pg-block-left-item-img">
+                                                <h5 class = "fw-7 fs-18 mt-3">परियोजना स्वीकृति</h5>
+                                            </a>
+                                        </div>
+
+                                        <div class = "col-md-6 p-0">
+                                            <a href = "#" class = "pg-block-left-item d-flex flex-column align-items-center justify-content-center text-center border-black-20 p-4 border-r-5 mx-4 my-sm-3">
+                                                <img src = "assets/images/dashboard/quick_links_ico_3.svg" class = "pg-block-left-item-img">
+                                                <h5 class = "fw-7 fs-18 mt-3">इन्टर्नको लागिे </h5>
+                                            </a>
+                                        </div>
+
+                                        <div class = "col-md-6 p-0">
+                                            <a href = "#" class = "pg-block-left-item d-flex flex-column align-items-center justify-content-center text-center border-black-20 p-4 border-r-5 mx-4 my-sm-3">
+                                                <img src = "assets/images/dashboard/quick_links_ico_4.svg" class = "pg-block-left-item-img">
+                                                <h5 class = "fw-7 fs-18 mt-3">सामाजिक हेरचाह</h5>
+                                            </a>
+                                        </div>
+
+                                        <div class = "col-md-6 p-0">
+                                            <a href = "#" class = "pg-block-left-item d-flex flex-column align-items-center justify-content-center text-center border-black-20 p-4 border-r-5 mx-4 my-sm-3">
+                                                <img src = "assets/images/dashboard/quick_links_ico_5.svg" class = "pg-block-left-item-img">
+                                                <h5 class = "fw-7 fs-18 mt-3">कार्यतालिका</h5>
+                                            </a>
+                                        </div>
+
+                                        <div class = "col-md-6 p-0">
+                                            <a href = "#" class = "pg-block-left-item d-flex flex-column align-items-center justify-content-center text-center border-black-20 p-4 border-r-5 mx-4 my-sm-3">
+                                                <img src = "assets/images/dashboard/quick_links_ico_6.svg" class = "pg-block-left-item-img">
+                                                <h5 class = "fw-7 fs-18 mt-3">जागिरको लागि</h5>
+                                            </a>
+                                        </div>
+
+                                        <div class = "col-md-6 p-0">
+                                            <a href = "#" class = "pg-block-left-item d-flex flex-column align-items-center justify-content-center text-center border-black-20 p-4 border-r-5 mx-4 my-sm-3">
+                                                <img src = "assets/images/dashboard/quick_links_ico_7.svg" class = "pg-block-left-item-img">
+                                                <h5 class = "fw-7 fs-18 mt-3">भिषा सम्बन्धि फाईल</h5>
+                                            </a>
+                                        </div>
+
+                                        <div class = "col-md-6 p-0">
+                                            <a href = "#" class = "pg-block-left-item d-flex flex-column align-items-center justify-content-center text-center border-black-20 p-4 border-r-5 mx-4 my-sm-3">
+                                                <img src = "assets/images/dashboard/quick_links_ico_8.svg" class = "pg-block-left-item-img">
+                                                <h5 class = "fw-7 fs-18 mt-3">सचिव ज्यूको दैनिक भेटघाट</h5>
+                                            </a>
+                                        </div>
+
+                                        <div class = "col-md-6 p-0">
+                                            <a href = "#" class = "pg-block-left-item d-flex flex-column align-items-center justify-content-center text-center border-black-20 p-4 border-r-5 mx-4 my-sm-3">
+                                                <img src = "assets/images/dashboard/quick_links_ico_9_more.svg" class = "pg-block-left-item-img">
+                                                <h5 class = "fw-7 fs-18 mt-3">अन्य</h5>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class = "col-lg-6 col-right">
+                            <!-- meeting list -->
+                            <div class = "pg-block-right bg-white pg-block-meetings border-black-20 border-r-20">
+                                <div class = "pg-block-right-top d-md-flex align-items-md-center justify-content-md-between p-4">
+                                    <h3 class = "fw-7 fs-25 m-0">मिटिङ्ग</h3>
+
+                                    <div class = "pg-block-btns mt-3 mt-md-0">
+                                        <button type = "button" class = "pg-block-btn border-black-20 border-r-5 pg-block-btn-active">आज</button>
+                                        <button type = "button" class = "pg-block-btn border-black-20 border-r-5 ms-2">भोलि</button>
+                                        <button type = "button" class = "pg-block-btn border-black-20 border-r-5 ms-2">साप्ताहिक</button>
+                                    </div>
+                                </div>
+
+                                <div class = "pg-block-right-content pg-block-scrollbar">
+                                    <div class = "row">
+                                        <div class="accordion pg-block-right-accordion" id="accordionMeetings">
+                                            <!-- single accordion item -->
+                                            <div class="accordion-item mb-4 mx-3 mx-sm-5 px-3 py-2">
+                                                <div class="accordion-header" id="headingOne">
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                                        <div class = "d-flex align-items-center">
+                                                            <div class = "accordion-item-img me-3">
+                                                                <img src = "assets/images/dashboard/person-img.jpg" alt = "">
+                                                            </div>
+                                                            <div class = "accordion-item-text text-grey38">
+                                                                <span class = "fw-7 fs-20 d-block">राम प्रसाद</span>
+                                                                <span class = "fw-4 fs-18 hide-item">३:३० PM-४:०० PM</span>
+                                                            </div>
+                                                        </div>
+                                                    </button>
+                                                </div>
+                                                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionMeetings">
+                                                    <div class="accordion-body pt-0">
+                                                        <div class = "d-flex align-items-center mt-2">
+                                                            <span class = "me-2"><i class="bi bi-clock"></i></span>
+                                                            <span class = "fw-4 fs-16">३:३० PM-४:०० PM</span>
+                                                        </div>
+                                                        <div class = "d-flex align-items-center mb-2">
+                                                            <span class = "me-2"><i class="bi bi-geo-alt"></i></span>
+                                                            <span class = "fw-4 fs-16">पुतलीसडक, काठमाडौं</span>
+                                                        </div>
+                                                        <a href = "#" class = "d-flex align-items-center mb-2 mt-3">
+                                                            <img src = "assets/images/dashboard/agenda-icon.svg" alt = "" class = "accordion-body-icon me-2">
+                                                            <span class = "text-royal-blue fw-6 fs-20">
+                                                                भेट्ने एजेन्डा
+                                                            </span>
+                                                        </a>
+                                                        <p>आज  २:३० मा गैर अवसीय संस्थ प्लान ईन्टरनेशनल संगको भेटघाट हाल सडक बालबालिकाहरुले भोग्दै आएको समस्यलाई हल गर्ने उदेश्य</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- end of single accordion item -->
+                                            <!-- single accordion item -->
+                                            <div class="accordion-item mb-4 mx-3 mx-sm-5 px-3 py-2">
+                                                <div class="accordion-header" id="headingTwo">
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                        <div class = "d-flex align-items-center">
+                                                            <div class = "accordion-item-img me-3">
+                                                                <img src = "assets/images/dashboard/person-img.jpg" alt = "">
+                                                            </div>
+                                                            <div class = "accordion-item-text text-grey38">
+                                                                <span class = "fw-7 fs-20 d-block">Land Mark</span>
+                                                                <span class = "fw-4 fs-18 hide-item">३:३० PM-४:०० PM</span>
+                                                            </div>
+                                                        </div>
+                                                    </button>
+                                                </div>
+                                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionMeetings">
+                                                    <div class="accordion-body pt-0">
+                                                        <div class = "d-flex align-items-center mt-2">
+                                                            <span class = "me-2"><i class="bi bi-clock"></i></span>
+                                                            <span class = "fw-4 fs-16">३:३० PM-४:०० PM</span>
+                                                        </div>
+                                                        <div class = "d-flex align-items-center mb-2">
+                                                            <span class = "me-2"><i class="bi bi-geo-alt"></i></span>
+                                                            <span class = "fw-4 fs-16">पुतलीसडक, काठमाडौं</span>
+                                                        </div>
+                                                        <a href = "#" class = "d-flex align-items-center mb-2 mt-3">
+                                                            <img src = "assets/images/dashboard/agenda-icon.svg" alt = "" class = "accordion-body-icon me-2">
+                                                            <span class = "text-royal-blue fw-6 fs-20">
+                                                                भेट्ने एजेन्डा
+                                                            </span>
+                                                        </a>
+                                                        <p>आज  २:३० मा गैर अवसीय संस्थ प्लान ईन्टरनेशनल संगको भेटघाट हाल सडक बालबालिकाहरुले भोग्दै आएको समस्यलाई हल गर्ने उदेश्य</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- end of single accordion item -->
+                                            <!-- single accordion item -->
+                                            <div class="accordion-item mb-4 mx-3 mx-sm-5 px-3 py-2">
+                                                <div class="accordion-header" id="headingThree">
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                                        <div class = "d-flex align-items-center">
+                                                            <div class = "accordion-item-img me-3">
+                                                                <img src = "assets/images/dashboard/person-img.jpg" alt = "">
+                                                            </div>
+                                                            <div class = "accordion-item-text text-grey38">
+                                                                <span class = "fw-7 fs-20 d-block">WHO</span>
+                                                                <span class = "fw-4 fs-18 hide-item">३:३० PM-४:०० PM</span>
+                                                            </div>
+                                                        </div>
+                                                    </button>
+                                                </div>
+                                                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionMeetings">
+                                                    <div class="accordion-body pt-0">
+                                                        <div class = "d-flex align-items-center mt-2">
+                                                            <span class = "me-2"><i class="bi bi-clock"></i></span>
+                                                            <span class = "fw-4 fs-16">३:३० PM-४:०० PM</span>
+                                                        </div>
+                                                        <div class = "d-flex align-items-center mb-2">
+                                                            <span class = "me-2"><i class="bi bi-geo-alt"></i></span>
+                                                            <span class = "fw-4 fs-16">पुतलीसडक, काठमाडौं</span>
+                                                        </div>
+                                                        <a href = "#" class = "d-flex align-items-center mb-2 mt-3">
+                                                            <img src = "assets/images/dashboard/agenda-icon.svg" alt = "" class = "accordion-body-icon me-2">
+                                                            <span class = "text-royal-blue fw-6 fs-20">
+                                                                भेट्ने एजेन्डा
+                                                            </span>
+                                                        </a>
+                                                        <p>आज  २:३० मा गैर अवसीय संस्थ प्लान ईन्टरनेशनल संगको भेटघाट हाल सडक बालबालिकाहरुले भोग्दै आएको समस्यलाई हल गर्ने उदेश्य</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- end of single accordion item -->
+                                            <!-- single accordion item -->
+                                            <div class="accordion-item mb-4 mx-3 mx-sm-5 px-3 py-2">
+                                                <div class="accordion-header" id="headingFour">
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                                        <div class = "d-flex align-items-center">
+                                                            <div class = "accordion-item-img me-3">
+                                                                <img src = "assets/images/dashboard/person-img.jpg" alt = "">
+                                                            </div>
+                                                            <div class = "accordion-item-text text-grey38">
+                                                                <span class = "fw-7 fs-20 d-block">कर्म शेर्पा</span>
+                                                                <span class = "fw-4 fs-18 hide-item">३:३० PM-४:०० PM</span>
+                                                            </div>
+                                                        </div>
+                                                    </button>
+                                                </div>
+                                                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionMeetings">
+                                                    <div class="accordion-body pt-0">
+                                                        <div class = "d-flex align-items-center mt-2">
+                                                            <span class = "me-2"><i class="bi bi-clock"></i></span>
+                                                            <span class = "fw-4 fs-16">३:३० PM-४:०० PM</span>
+                                                        </div>
+                                                        <div class = "d-flex align-items-center mb-2">
+                                                            <span class = "me-2"><i class="bi bi-geo-alt"></i></span>
+                                                            <span class = "fw-4 fs-16">पुतलीसडक, काठमाडौं</span>
+                                                        </div>
+                                                        <a href = "#" class = "d-flex align-items-center mb-2 mt-3">
+                                                            <img src = "assets/images/dashboard/agenda-icon.svg" alt = "" class = "accordion-body-icon me-2">
+                                                            <span class = "text-royal-blue fw-6 fs-20">
+                                                                भेट्ने एजेन्डा
+                                                            </span>
+                                                        </a>
+                                                        <p>आज  २:३० मा गैर अवसीय संस्थ प्लान ईन्टरनेशनल संगको भेटघाट हाल सडक बालबालिकाहरुले भोग्दै आएको समस्यलाई हल गर्ने उदेश्य</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- end of single accordion item -->
+                                            <!-- single accordion item -->
+                                            <div class="accordion-item mb-4 mx-3 mx-sm-5 px-3 py-2">
+                                                <div class="accordion-header" id="headingFive">
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                                        <div class = "d-flex align-items-center">
+                                                            <div class = "accordion-item-img me-3">
+                                                                <img src = "assets/images/dashboard/person-img.jpg" alt = "">
+                                                            </div>
+                                                            <div class = "accordion-item-text text-grey38">
+                                                                <span class = "fw-7 fs-20 d-block">मिलन राई</span>
+                                                                <span class = "fw-4 fs-18 hide-item">३:३० PM-४:०० PM</span>
+                                                            </div>
+                                                        </div>
+                                                    </button>
+                                                </div>
+                                                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionMeetings">
+                                                    <div class="accordion-body pt-0">
+                                                        <div class = "d-flex align-items-center mt-2">
+                                                            <span class = "me-2"><i class="bi bi-clock"></i></span>
+                                                            <span class = "fw-4 fs-16">३:३० PM-४:०० PM</span>
+                                                        </div>
+                                                        <div class = "d-flex align-items-center mb-2">
+                                                            <span class = "me-2"><i class="bi bi-geo-alt"></i></span>
+                                                            <span class = "fw-4 fs-16">पुतलीसडक, काठमाडौं</span>
+                                                        </div>
+                                                        <a href = "#" class = "d-flex align-items-center mb-2 mt-3">
+                                                            <img src = "assets/images/dashboard/agenda-icon.svg" alt = "" class = "accordion-body-icon me-2">
+                                                            <span class = "text-royal-blue fw-6 fs-20">
+                                                                भेट्ने एजेन्डा
+                                                            </span>
+                                                        </a>
+                                                        <p>आज  २:३० मा गैर अवसीय संस्थ प्लान ईन्टरनेशनल संगको भेटघाट हाल सडक बालबालिकाहरुले भोग्दै आएको समस्यलाई हल गर्ने उदेश्य</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- end of single accordion item -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end of pg block 4 -->
+        </div>
+
+        <footer class = "pg-footer px-3 py-4 bg-lightblue border-black-20">
+            <div class = "container">  
+                <a href = "dashboard.html" class = "d-flex align-items-center justify-content-center pg-nav-brand pg-nav-brand-footer">
+                    <img src = "assets/images/site_logo.svg" alt = "site logo">
+                    <div class = "pg-nav-brand-text">
+                        <span class = "d-block fs-22">समाज कल्याण परिषद्</span>
+                        <span class = "text-blue fw-7 fs-35">सचिवलय</span>
+                    </div>
+                </a>
+            </div>
+        </footer>
+    </div>
+
+
+    <!-- scripts -->
+    <script src = "assets/js/jquery-3.6.0.js"></script>
+    <script src = "assets/bootstrap-5.0.2-dist/js/bootstrap.bundle.js"></script>
+    <script src = "assets/js/script.js"></script>
+</body>
+</html>

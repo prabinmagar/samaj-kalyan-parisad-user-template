@@ -1,0 +1,1173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "icon" type = "image/x-icon" href = "assets/images/site_logo.svg">
+    <title>समाज कल्याण परिषद्</title>
+    <!-- bootstrap -->
+    <link rel = "stylesheet" href = "assets/bootstrap-5.0.2-dist/css/bootstrap.css">
+    <!-- bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link rel = "stylesheet" href = "assets/css/utilities.css">
+    <link rel = "stylesheet" href = "assets/css/style.css">
+</head>
+<body>
+    <div class = "pg-agreement fnt-mukta">
+        <header class = "pg-header">
+            <nav class = "pg-nav px-3">
+                <div class = "container h-100 d-flex align-items-center">
+                    <div class = "pg-nav-and-toggler d-flex align-items-center justify-content-between w-100">
+                        <a href = "dashboard.html" class = "d-flex align-items-center pg-nav-brand">
+                            <img src = "assets/images/site_logo.svg" alt = "site logo">
+                            <div class = "pg-nav-brand-text">
+                                <span class = "d-block fs-22">समाज कल्याण परिषद्</span>
+                                <span class = "text-blue fw-7 fs-35">सचिवलय</span>
+                            </div>
+                        </a>
+
+                        <div class = "pg-navbar-collapse">
+                            <button type = "button" class = "pg-nav-hide-btn fs-30 position-absolute">
+                                <i class="bi bi-x-circle"></i>
+                            </button>
+                            <ul class = "pg-navbar-nav">
+                                <li class = "pg-nav-item pb-3 pb-xl-0">
+                                    <a href = "#" class = "pg-nav-link fw-6 fs-12 d-flex align-items-center">
+                                        <img src = "assets/images/dashboard/approve_icon.svg" alt = "" class = "pg-nav-link-img">
+                                        <span class = "pg-nav-link-text ms-3">परियोजना स्वीकृति</span>
+                                    </a>
+                                </li>
+                                <li class = "pg-nav-item pb-3 pb-xl-0">
+                                    <a href = "#" class = "pg-nav-link fw-6 fs-12 d-flex align-items-center">
+                                        <img src = "assets/images/dashboard/blueprint_icon.svg" alt = "" class = "pg-nav-link-img">
+                                        <span class = "pg-nav-link-text ms-3">परियोजना सम्झौता</span>
+                                    </a>
+                                </li>
+                                <li class = "pg-nav-item pb-3 pb-xl-0">
+                                    <a href = "#" class = "pg-nav-link fw-6 fs-12 d-flex align-items-center">
+                                        <img src = "assets/images/dashboard/talking_icon.svg" alt = "" class = "pg-nav-link-img">
+                                        <span class = "pg-nav-link-text ms-3">सचिव ज्यूको दैनिक भेटघाट</span>
+                                    </a>
+                                </li>
+                                <li class = "pg-nav-item">
+                                    <a href = "#" class = "pg-nav-link fw-6 fs-12 d-flex align-items-center">
+                                        <img src = "assets/images/dashboard/calendar_icon.svg" alt = "" class = "pg-nav-link-img">
+                                        <span class = "pg-nav-link-text ms-3">सचिव ज्यूको दैनिक कार्यक्रम</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class = "pg-nav-btns d-flex align-items-center ms-auto me-5">
+                            <div class = "pg-nav-btn position-relative my-2">
+                                <img src = "assets/images/dashboard/bell_icon.svg" alt = "" class = "pg-nav-btn-img">
+                                <span class = "position-absolute top-0 start-100 translate-middle badge rounded-pill bg-fs-red">3</span>
+                            </div>
+
+                            <div class="pg-nav-btn dropdown my-2">
+                                <button class="btn dropdown-toggle p-0" type="button" id="navDropdown1" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <img src = "assets/images/dashboard/user_icon.svg" alt = "" class = "pg-nav-btn-img d-inline-block">
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="navDropdown1">
+                                  <li><a class="dropdown-item" href="#">See Profile</a></li>
+                                  <li><a class="dropdown-item" href="#">Settings</a></li>
+                                  <li><a class="dropdown-item" href="#">Logout</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <button type = "button" class = "pg-nav-show-btn fs-35">
+                            <i class="bi bi-list"></i>
+                        </button>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <div class = "pg-block-wrapper bg-lightblue">
+            <!-- pg block 1 -->
+            <div class = "pg-block-1 pg-block-internList py-5">
+                <div class = "pg-block-1-title bg-white py-4 px-3">
+                    <div class = "container">
+                        <div class = "row align-items-center justify-content-between">
+                            <div class = "pg-block-1-title-left col-lg-6 d-flex flex-column flex-sm-row align-items-center justify-content-between justify-content-lg-start">
+                                <h2 class = "fw-7 fs-22 mb-0 me-3 me-xl-5 mb-3 mb-sm-0">साधारण सम्झौता</h2>
+                                <form>
+                                    <div class = "input-group border-r-10">
+                                        <span class = "input-group-text bg-white text-grey38 fs-22">
+                                            <i class="bi bi-search"></i>
+                                        </span>
+                                        <input type = "text" class = "form-control fs-20" placeholder="साधारण सम्झौता नाम">
+                                    </div>
+                                </form>
+                            </div>
+                            <div class = "pg-block-1-title-right col-lg-6 d-flex flex-column flex-sm-row align-items-center justify-content-sm-between justify-content-lg-end mt-4 mt-lg-0">
+                                <div class = "d-flex align-items-center">
+                                    <div class="dropdown me-2">
+                                        <button class="btn-radius dropdown-toggle" type="button" id="statusButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                          Status
+                                        </button>
+                                        <ul class="dropdown-menu p-2 border-r-20" aria-labelledby="statusButton1">
+                                            <li class = "mb-2">
+                                                <a class="dropdown-item btn-radius d-flex align-items-center justify-content-around" href="#">
+                                                    <img src = "assets/images/icons/circle-icon-blue.svg" class = "icon-fluid">
+                                                    <span>Active</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item btn-radius d-flex align-items-center justify-content-around" href="#">
+                                                    <img src = "assets/images/icons/circle-icon-red.svg" class = "icon-fluid">
+                                                    <span>Time Off</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class = "pg-block-1-display-grid-opt d-flex align-items-center">
+                                        <button type = "button" class = "fs-24 mx-2" id = "block-view-btn">
+                                            <i class="bi bi-grid-3x3-gap-fill"></i>
+                                        </button>
+                                        <button type = "button" class = "fs-24 mx-2" id = "table-view-btn">
+                                            <i class="bi bi-distribute-vertical"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <button type = "button" class = "text-capitalize btn-blue ms-sm-4 mt-4 mt-sm-0">create new</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class = "container mx-0 px-3 mx-auto pg-table-toggle pg-block-scrollbar">
+                    <div class = "row mt-4 mx-0 gy-5 justify-content-start pg-block-card-list pg-block-card-table-list">
+                        <!-- single card -->
+                        <!-- <div class = "col-md-6 col-xl-4 col-xxl-3 px-3">
+                            <div class = "pg-block-card bg-white py-4 px-3 border-r-10">
+                                <div class = "pg-block-card-top d-flex align-items-center justify-content-between">
+                                    <div class = "pg-block-card-img">
+                                        <img src = "assets/images/agreement/logo-img.svg" alt = "">
+                                    </div>
+                                    <div class = "pg-block-card-title text-capitalize fw-7 fs-20 text-blue">united nations</div>
+                                    <div class="dropdown">
+                                        <button class="btn dropdown-toggle fs-24 pb-0 pe-0 text-dark" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <i class="bi bi-three-dots-vertical"></i>
+                                        </button>
+                                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                                          <li><a class="dropdown-item" href="#"><i class="bi bi-pencil-fill"></i><span class = "ms-2">Edit</span></a></li>
+                                          <li><a class="dropdown-item" href="#"><i class="bi bi-trash3-fill"></i><span class = "ms-2">Delete</span></a></li>
+                                        </ul>
+                                      </div>
+                                </div>
+                                <div class = "pg-block-card-body py-4">
+                                    <div class = "d-flex align-items-center justify-content-between">
+                                        <h5>विवरण</h5>
+                                        <div class = "sm-pills d-flex align-items-center">
+                                            <img src = "assets/images/icons/circle-icon-blue.svg" alt = "">
+                                            <span class = "ms-3 fs-10">Active</span>
+                                        </div>
+                                    </div>
+                                    <p class = "lh-25 text-justify mt-2">आज  २:३० मा गैर अवसीय संस्थ प्लान ईन्टरनेशनल संगको भेटघाट हाल सडक बालबालिकाहरुले भोग्दै आएको समस्यलाई हल गर्ने उदेश्य</p>
+                                </div>
+                                <div class = "pg-block-card-bottom">
+                                    <div class = "d-flex align-items-center justify-content-between mx-3">
+                                        <div class = "card-date">
+                                            <span class = "fw-6 d-block">सम्झौता मिति</span>
+                                            <span class = "text-grey38">17 Apr 2022</span>
+                                        </div>
+                                        <div class = "card-date">
+                                            <span class = "fw-6 d-block">सकिने मिति</span>
+                                            <span class = "text-grey38">17 Apr 2022</span>
+                                        </div>
+                                    </div>
+                                    <div class = "d-flex align-items-center justify-content-between mt-4 pg-block-card-btn-group">
+                                        <button type = "button" class = "d-flex align-items-center pg-block-card-btn border-r-10">
+                                            <span class = "fs-14 text-black-80 me-2">हेनुहोस्</span>
+                                            <img src = "assets/images/icons/view_icon.svg" alt = "">
+                                        </button>
+                                        <button type = "button" class = "d-flex align-items-center pg-block-card-btn border-r-10">
+                                            <span class = "fs-14 text-black-80 me-2">प्रिन्ट गनुहोस</span>
+                                            <img src = "assets/images/icons/print_icon.svg" alt = "">
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> -->
+                        <!-- end of single card -->
+                        <!-- single card -->
+                        <!-- <div class = "col-md-6 col-xl-4 col-xxl-3 px-3">
+                            <div class = "pg-block-card bg-white py-4 px-3 border-r-10">
+                                <div class = "pg-block-card-top d-flex align-items-center justify-content-between">
+                                    <div class = "pg-block-card-img">
+                                        <img src = "assets/images/agreement/logo-img.svg" alt = "">
+                                    </div>
+                                    <div class = "pg-block-card-title text-capitalize fw-7 fs-20 text-blue">united nations</div>
+                                    <div class="dropdown">
+                                        <button class="btn dropdown-toggle fs-24 pb-0 pe-0 text-dark" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <i class="bi bi-three-dots-vertical"></i>
+                                        </button>
+                                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                                          <li><a class="dropdown-item" href="#"><i class="bi bi-pencil-fill"></i><span class = "ms-2">Edit</span></a></li>
+                                          <li><a class="dropdown-item" href="#"><i class="bi bi-trash3-fill"></i><span class = "ms-2">Delete</span></a></li>
+                                        </ul>
+                                      </div>
+                                </div>
+                                <div class = "pg-block-card-body py-4">
+                                    <div class = "d-flex align-items-center justify-content-between">
+                                        <h5>विवरण</h5>
+                                        <div class = "sm-pills d-flex align-items-center">
+                                            <img src = "assets/images/icons/circle-icon-red.svg" alt = "">
+                                            <span class = "ms-3 fs-10">Time Off</span>
+                                        </div>
+                                    </div>
+                                    <p class = "lh-25 text-justify mt-2">आज  २:३० मा गैर अवसीय संस्थ प्लान ईन्टरनेशनल संगको भेटघाट हाल सडक बालबालिकाहरुले भोग्दै आएको समस्यलाई हल गर्ने उदेश्य</p>
+                                </div>
+                                <div class = "pg-block-card-bottom">
+                                    <div class = "d-flex align-items-center justify-content-between mx-3">
+                                        <div class = "card-date">
+                                            <span class = "fw-6 d-block">सम्झौता मिति</span>
+                                            <span class = "text-grey38">17 Apr 2022</span>
+                                        </div>
+                                        <div class = "card-date">
+                                            <span class = "fw-6 d-block">सकिने मिति</span>
+                                            <span class = "text-grey38">17 Apr 2022</span>
+                                        </div>
+                                    </div>
+                                    <div class = "d-flex align-items-center justify-content-between mt-4 pg-block-card-btn-group">
+                                        <button type = "button" class = "d-flex align-items-center pg-block-card-btn border-r-10">
+                                            <span class = "fs-14 text-black-80 me-2">हेनुहोस्</span>
+                                            <img src = "assets/images/icons/view_icon.svg" alt = "">
+                                        </button>
+                                        <button type = "button" class = "d-flex align-items-center pg-block-card-btn border-r-10">
+                                            <span class = "fs-14 text-black-80 me-2">प्रिन्ट गनुहोस</span>
+                                            <img src = "assets/images/icons/print_icon.svg" alt = "">
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> -->
+                        <!-- end of single card -->
+                        <!-- single card -->
+                        <!-- <div class = "col-md-6 col-xl-4 col-xxl-3 px-3">
+                            <div class = "pg-block-card bg-white py-4 px-3 border-r-10">
+                                <div class = "pg-block-card-top d-flex align-items-center justify-content-between">
+                                    <div class = "pg-block-card-img">
+                                        <img src = "assets/images/agreement/logo-img.svg" alt = "">
+                                    </div>
+                                    <div class = "pg-block-card-title text-capitalize fw-7 fs-20 text-blue">united nations</div>
+                                    <div class="dropdown">
+                                        <button class="btn dropdown-toggle fs-24 pb-0 pe-0 text-dark" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <i class="bi bi-three-dots-vertical"></i>
+                                        </button>
+                                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                                          <li><a class="dropdown-item" href="#"><i class="bi bi-pencil-fill"></i><span class = "ms-2">Edit</span></a></li>
+                                          <li><a class="dropdown-item" href="#"><i class="bi bi-trash3-fill"></i><span class = "ms-2">Delete</span></a></li>
+                                        </ul>
+                                      </div>
+                                </div>
+                                <div class = "pg-block-card-body py-4">
+                                    <div class = "d-flex align-items-center justify-content-between">
+                                        <h5>विवरण</h5>
+                                        <div class = "sm-pills d-flex align-items-center">
+                                            <img src = "assets/images/icons/circle-icon-blue.svg" alt = "">
+                                            <span class = "ms-3 fs-10">Active</span>
+                                        </div>
+                                    </div>
+                                    <p class = "lh-25 text-justify mt-2">आज  २:३० मा गैर अवसीय संस्थ प्लान ईन्टरनेशनल संगको भेटघाट हाल सडक बालबालिकाहरुले भोग्दै आएको समस्यलाई हल गर्ने उदेश्य</p>
+                                </div>
+                                <div class = "pg-block-card-bottom">
+                                    <div class = "d-flex align-items-center justify-content-between mx-3">
+                                        <div class = "card-date">
+                                            <span class = "fw-6 d-block">सम्झौता मिति</span>
+                                            <span class = "text-grey38">17 Apr 2022</span>
+                                        </div>
+                                        <div class = "card-date">
+                                            <span class = "fw-6 d-block">सकिने मिति</span>
+                                            <span class = "text-grey38">17 Apr 2022</span>
+                                        </div>
+                                    </div>
+                                    <div class = "d-flex align-items-center justify-content-between mt-4 pg-block-card-btn-group">
+                                        <button type = "button" class = "d-flex align-items-center pg-block-card-btn border-r-10">
+                                            <span class = "fs-14 text-black-80 me-2">हेनुहोस्</span>
+                                            <img src = "assets/images/icons/view_icon.svg" alt = "">
+                                        </button>
+                                        <button type = "button" class = "d-flex align-items-center pg-block-card-btn border-r-10">
+                                            <span class = "fs-14 text-black-80 me-2">प्रिन्ट गनुहोस</span>
+                                            <img src = "assets/images/icons/print_icon.svg" alt = "">
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> -->
+                        <!-- end of single card -->
+                        <!-- single card -->
+                        <!-- <div class = "col-md-6 col-xl-4 col-xxl-3 px-3">
+                            <div class = "pg-block-card bg-white py-4 px-3 border-r-10">
+                                <div class = "pg-block-card-top d-flex align-items-center justify-content-between">
+                                    <div class = "pg-block-card-img">
+                                        <img src = "assets/images/agreement/logo-img.svg" alt = "">
+                                    </div>
+                                    <div class = "pg-block-card-title text-capitalize fw-7 fs-20 text-blue">united nations</div>
+                                    <div class="dropdown">
+                                        <button class="btn dropdown-toggle fs-24 pb-0 pe-0 text-dark" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <i class="bi bi-three-dots-vertical"></i>
+                                        </button>
+                                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                                          <li><a class="dropdown-item" href="#"><i class="bi bi-pencil-fill"></i><span class = "ms-2">Edit</span></a></li>
+                                          <li><a class="dropdown-item" href="#"><i class="bi bi-trash3-fill"></i><span class = "ms-2">Delete</span></a></li>
+                                        </ul>
+                                      </div>
+                                </div>
+                                <div class = "pg-block-card-body py-4">
+                                    <div class = "d-flex align-items-center justify-content-between">
+                                        <h5>विवरण</h5>
+                                        <div class = "sm-pills d-flex align-items-center">
+                                            <img src = "assets/images/icons/circle-icon-blue.svg" alt = "">
+                                            <span class = "ms-3 fs-10">Active</span>
+                                        </div>
+                                    </div>
+                                    <p class = "lh-25 text-justify mt-2">आज  २:३० मा गैर अवसीय संस्थ प्लान ईन्टरनेशनल संगको भेटघाट हाल सडक बालबालिकाहरुले भोग्दै आएको समस्यलाई हल गर्ने उदेश्य</p>
+                                </div>
+                                <div class = "pg-block-card-bottom">
+                                    <div class = "d-flex align-items-center justify-content-between mx-3">
+                                        <div class = "card-date">
+                                            <span class = "fw-6 d-block">सम्झौता मिति</span>
+                                            <span class = "text-grey38">17 Apr 2022</span>
+                                        </div>
+                                        <div class = "card-date">
+                                            <span class = "fw-6 d-block">सकिने मिति</span>
+                                            <span class = "text-grey38">17 Apr 2022</span>
+                                        </div>
+                                    </div>
+                                    <div class = "d-flex align-items-center justify-content-between mt-4 pg-block-card-btn-group">
+                                        <button type = "button" class = "d-flex align-items-center pg-block-card-btn border-r-10">
+                                            <span class = "fs-14 text-black-80 me-2">हेनुहोस्</span>
+                                            <img src = "assets/images/icons/view_icon.svg" alt = "">
+                                        </button>
+                                        <button type = "button" class = "d-flex align-items-center pg-block-card-btn border-r-10">
+                                            <span class = "fs-14 text-black-80 me-2">प्रिन्ट गनुहोस</span>
+                                            <img src = "assets/images/icons/print_icon.svg" alt = "">
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> -->
+                        <!-- end of single card -->
+                        <!-- single card -->
+                        <!-- <div class = "col-md-6 col-xl-4 col-xxl-3 px-3">
+                            <div class = "pg-block-card bg-white py-4 px-3 border-r-10">
+                                <div class = "pg-block-card-top d-flex align-items-center justify-content-between">
+                                    <div class = "pg-block-card-img">
+                                        <img src = "assets/images/agreement/logo-img.svg" alt = "">
+                                    </div>
+                                    <div class = "pg-block-card-title text-capitalize fw-7 fs-20 text-blue">united nations</div>
+                                    <div class="dropdown">
+                                        <button class="btn dropdown-toggle fs-24 pb-0 pe-0 text-dark" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <i class="bi bi-three-dots-vertical"></i>
+                                        </button>
+                                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                                          <li><a class="dropdown-item" href="#"><i class="bi bi-pencil-fill"></i><span class = "ms-2">Edit</span></a></li>
+                                          <li><a class="dropdown-item" href="#"><i class="bi bi-trash3-fill"></i><span class = "ms-2">Delete</span></a></li>
+                                        </ul>
+                                      </div>
+                                </div>
+                                <div class = "pg-block-card-body py-4">
+                                    <div class = "d-flex align-items-center justify-content-between">
+                                        <h5>विवरण</h5>
+                                        <div class = "sm-pills d-flex align-items-center">
+                                            <img src = "assets/images/icons/circle-icon-blue.svg" alt = "">
+                                            <span class = "ms-3 fs-10">Active</span>
+                                        </div>
+                                    </div>
+                                    <p class = "lh-25 text-justify mt-2">आज  २:३० मा गैर अवसीय संस्थ प्लान ईन्टरनेशनल संगको भेटघाट हाल सडक बालबालिकाहरुले भोग्दै आएको समस्यलाई हल गर्ने उदेश्य</p>
+                                </div>
+                                <div class = "pg-block-card-bottom">
+                                    <div class = "d-flex align-items-center justify-content-between mx-3">
+                                        <div class = "card-date">
+                                            <span class = "fw-6 d-block">सम्झौता मिति</span>
+                                            <span class = "text-grey38">17 Apr 2022</span>
+                                        </div>
+                                        <div class = "card-date">
+                                            <span class = "fw-6 d-block">सकिने मिति</span>
+                                            <span class = "text-grey38">17 Apr 2022</span>
+                                        </div>
+                                    </div>
+                                    <div class = "d-flex align-items-center justify-content-between mt-4 pg-block-card-btn-group">
+                                        <button type = "button" class = "d-flex align-items-center pg-block-card-btn border-r-10">
+                                            <span class = "fs-14 text-black-80 me-2">हेनुहोस्</span>
+                                            <img src = "assets/images/icons/view_icon.svg" alt = "">
+                                        </button>
+                                        <button type = "button" class = "d-flex align-items-center pg-block-card-btn border-r-10">
+                                            <span class = "fs-14 text-black-80 me-2">प्रिन्ट गनुहोस</span>
+                                            <img src = "assets/images/icons/print_icon.svg" alt = "">
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> -->
+                        <!-- end of single card -->
+                        <!-- single card -->
+                        <!-- <div class = "col-md-6 col-xl-4 col-xxl-3 px-3">
+                            <div class = "pg-block-card bg-white py-4 px-3 border-r-10">
+                                <div class = "pg-block-card-top d-flex align-items-center justify-content-between">
+                                    <div class = "pg-block-card-img">
+                                        <img src = "assets/images/agreement/logo-img.svg" alt = "">
+                                    </div>
+                                    <div class = "pg-block-card-title text-capitalize fw-7 fs-20 text-blue">united nations</div>
+                                    <div class="dropdown">
+                                        <button class="btn dropdown-toggle fs-24 pb-0 pe-0 text-dark" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <i class="bi bi-three-dots-vertical"></i>
+                                        </button>
+                                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                                          <li><a class="dropdown-item" href="#"><i class="bi bi-pencil-fill"></i><span class = "ms-2">Edit</span></a></li>
+                                          <li><a class="dropdown-item" href="#"><i class="bi bi-trash3-fill"></i><span class = "ms-2">Delete</span></a></li>
+                                        </ul>
+                                      </div>
+                                </div>
+                                <div class = "pg-block-card-body py-4">
+                                    <div class = "d-flex align-items-center justify-content-between">
+                                        <h5>विवरण</h5>
+                                        <div class = "sm-pills d-flex align-items-center">
+                                            <img src = "assets/images/icons/circle-icon-red.svg" alt = "">
+                                            <span class = "ms-3 fs-10">Time Off</span>
+                                        </div>
+                                    </div>
+                                    <p class = "lh-25 text-justify mt-2">आज  २:३० मा गैर अवसीय संस्थ प्लान ईन्टरनेशनल संगको भेटघाट हाल सडक बालबालिकाहरुले भोग्दै आएको समस्यलाई हल गर्ने उदेश्य</p>
+                                </div>
+                                <div class = "pg-block-card-bottom">
+                                    <div class = "d-flex align-items-center justify-content-between mx-3">
+                                        <div class = "card-date">
+                                            <span class = "fw-6 d-block">सम्झौता मिति</span>
+                                            <span class = "text-grey38">17 Apr 2022</span>
+                                        </div>
+                                        <div class = "card-date">
+                                            <span class = "fw-6 d-block">सकिने मिति</span>
+                                            <span class = "text-grey38">17 Apr 2022</span>
+                                        </div>
+                                    </div>
+                                    <div class = "d-flex align-items-center justify-content-between mt-4 pg-block-card-btn-group">
+                                        <button type = "button" class = "d-flex align-items-center pg-block-card-btn border-r-10">
+                                            <span class = "fs-14 text-black-80 me-2">हेनुहोस्</span>
+                                            <img src = "assets/images/icons/view_icon.svg" alt = "">
+                                        </button>
+                                        <button type = "button" class = "d-flex align-items-center pg-block-card-btn border-r-10">
+                                            <span class = "fs-14 text-black-80 me-2">प्रिन्ट गनुहोस</span>
+                                            <img src = "assets/images/icons/print_icon.svg" alt = "">
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> -->
+                        <!-- end of single card -->
+                        <!-- single card -->
+                        <!-- <div class = "col-md-6 col-xl-4 col-xxl-3 p-0 px-3">
+                            <div class = "pg-block-card bg-white py-4 px-3 border-r-10">
+                                <div class = "pg-block-card-top d-flex align-items-center justify-content-between">
+                                    <div class = "pg-block-card-img">
+                                        <img src = "assets/images/agreement/logo-img.svg" alt = "">
+                                    </div>
+                                    <div class = "pg-block-card-title text-capitalize fw-7 fs-20 text-blue">united nations</div>
+                                    <div class="dropdown">
+                                        <button class="btn dropdown-toggle fs-24 pb-0 pe-0 text-dark" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <i class="bi bi-three-dots-vertical"></i>
+                                        </button>
+                                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                                          <li><a class="dropdown-item" href="#"><i class="bi bi-pencil-fill"></i><span class = "ms-2">Edit</span></a></li>
+                                          <li><a class="dropdown-item" href="#"><i class="bi bi-trash3-fill"></i><span class = "ms-2">Delete</span></a></li>
+                                        </ul>
+                                      </div>
+                                </div>
+                                <div class = "pg-block-card-body py-4">
+                                    <div class = "d-flex align-items-center justify-content-between">
+                                        <h5>विवरण</h5>
+                                        <div class = "sm-pills d-flex align-items-center">
+                                            <img src = "assets/images/icons/circle-icon-blue.svg" alt = "">
+                                            <span class = "ms-3 fs-10">Active</span>
+                                        </div>
+                                    </div>
+                                    <p class = "lh-25 text-justify mt-2">आज  २:३० मा गैर अवसीय संस्थ प्लान ईन्टरनेशनल संगको भेटघाट हाल सडक बालबालिकाहरुले भोग्दै आएको समस्यलाई हल गर्ने उदेश्य</p>
+                                </div>
+                                <div class = "pg-block-card-bottom">
+                                    <div class = "d-flex align-items-center justify-content-between mx-3">
+                                        <div class = "card-date">
+                                            <span class = "fw-6 d-block">सम्झौता मिति</span>
+                                            <span class = "text-grey38">17 Apr 2022</span>
+                                        </div>
+                                        <div class = "card-date">
+                                            <span class = "fw-6 d-block">सकिने मिति</span>
+                                            <span class = "text-grey38">17 Apr 2022</span>
+                                        </div>
+                                    </div>
+                                    <div class = "d-flex align-items-center justify-content-between mt-4 pg-block-card-btn-group">
+                                        <button type = "button" class = "d-flex align-items-center pg-block-card-btn border-r-10">
+                                            <span class = "fs-14 text-black-80 me-2">हेनुहोस्</span>
+                                            <img src = "assets/images/icons/view_icon.svg" alt = "">
+                                        </button>
+                                        <button type = "button" class = "d-flex align-items-center pg-block-card-btn border-r-10">
+                                            <span class = "fs-14 text-black-80 me-2">प्रिन्ट गनुहोस</span>
+                                            <img src = "assets/images/icons/print_icon.svg" alt = "">
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> -->
+                        <!-- end of single card -->
+                        <!-- single card -->
+                        <!-- <div class = "p-0 px-3">
+                            <div class = "pg-block-card bg-white py-4 px-3 border-r-10">
+                                <div class = "pg-block-card-top d-flex align-items-center justify-content-between">
+                                    <div class = "pg-block-card-img">
+                                        <img src = "assets/images/agreement/logo-img.svg" alt = "">
+                                    </div>
+                                    <div class = "pg-block-card-title text-capitalize fw-7 fs-20 text-blue">united nations</div>
+                                    <div class="dropdown">
+                                        <button class="btn dropdown-toggle fs-24 pb-0 pe-0 text-dark" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <i class="bi bi-three-dots-vertical"></i>
+                                        </button>
+                                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                                          <li><a class="dropdown-item" href="#"><i class="bi bi-pencil-fill"></i><span class = "ms-2">Edit</span></a></li>
+                                          <li><a class="dropdown-item" href="#"><i class="bi bi-trash3-fill"></i><span class = "ms-2">Delete</span></a></li>
+                                        </ul>
+                                      </div>
+                                </div>
+                                <div class = "pg-block-card-body py-4">
+                                    <div class = "d-flex align-items-center justify-content-between">
+                                        <h5>विवरण</h5>
+                                        <div class = "sm-pills d-flex align-items-center">
+                                            <img src = "assets/images/icons/circle-icon-blue.svg" alt = "">
+                                            <span class = "ms-3 fs-10">Active</span>
+                                        </div>
+                                    </div>
+                                    <p class = "lh-25 text-justify mt-2">आज  २:३० मा गैर अवसीय संस्थ प्लान ईन्टरनेशनल संगको भेटघाट हाल सडक बालबालिकाहरुले भोग्दै आएको समस्यलाई हल गर्ने उदेश्य</p>
+                                </div>
+                                <div class = "pg-block-card-bottom">
+                                    <div class = "d-flex align-items-center justify-content-between mx-3">
+                                        <div class = "card-date">
+                                            <span class = "fw-6 d-block">सम्झौता मिति</span>
+                                            <span class = "text-grey38">17 Apr 2022</span>
+                                        </div>
+                                        <div class = "card-date">
+                                            <span class = "fw-6 d-block">सकिने मिति</span>
+                                            <span class = "text-grey38">17 Apr 2022</span>
+                                        </div>
+                                    </div>
+                                    <div class = "d-flex align-items-center justify-content-between mt-4 pg-block-card-btn-group">
+                                        <button type = "button" class = "d-flex align-items-center pg-block-card-btn border-r-10">
+                                            <span class = "fs-14 text-black-80 me-2">हेनुहोस्</span>
+                                            <img src = "assets/images/icons/view_icon.svg" alt = "">
+                                        </button>
+                                        <button type = "button" class = "d-flex align-items-center pg-block-card-btn border-r-10">
+                                            <span class = "fs-14 text-black-80 me-2">प्रिन्ट गनुहोस</span>
+                                            <img src = "assets/images/icons/print_icon.svg" alt = "">
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> -->
+                        <!-- end of single card -->
+
+                        <!-- single card -->
+                        <div class = "col-md-6 col-xl-4 col-xxl-3 p-0 px-3">
+                            <div class = "pg-block-card bg-white py-4 px-3 border-r-10">
+                                <div class = "pg-block-card-top pg-block-cng d-flex align-items-center justify-content-between">
+                                    <div class = "pg-block-card-img">
+                                        <img src = "assets/images/agreement/logo-img.svg" alt = "">
+                                    </div>
+                                    <div class = "pg-block-card-title text-capitalize fw-7 fs-20 text-blue">united nations</div>
+                                    <div class="dropdown pg-block-card-dropdown">
+                                        <button class="btn dropdown-toggle fs-24 pb-0 pe-0 text-dark" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <i class="bi bi-three-dots-vertical"></i>
+                                        </button>
+                                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                                          <li><a class="dropdown-item" href="#"><i class="bi bi-pencil-fill"></i><span class = "ms-2">Edit</span></a></li>
+                                          <li><a class="dropdown-item" href="#"><i class="bi bi-trash3-fill"></i><span class = "ms-2">Delete</span></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class = "pg-block-card-id-info">
+                                    <p class = "m-0">samjhauta-005</p>
+                                </div>
+                                <div class = "pg-block-card-body py-4">
+                                    <div class = "d-flex align-items-center justify-content-between">
+                                        <h5>विवरण</h5>
+                                        <div class = "sm-pills d-flex align-items-center">
+                                            <img src = "assets/images/icons/circle-icon-blue.svg" alt = "">
+                                            <span class = "ms-3 fs-10">Active</span>
+                                        </div>
+                                    </div>
+                                    <p class = "lh-25 text-justify mt-2">आज  २:३० मा गैर अवसीय संस्थ प्लान ईन्टरनेशनल संगको भेटघाट हाल सडक बालबालिकाहरुले भोग्दै आएको समस्यलाई हल गर्ने उदेश्य</p>
+                                </div>
+                                <div class = "pg-block-card-bottom">
+                                    <div class = "d-flex align-items-center justify-content-between mx-3">
+                                        <div class = "card-date">
+                                            <span class = "fw-6 d-block">सम्झौता मिति</span>
+                                            <span class = "text-grey38">17 Apr 2022</span>
+                                        </div>
+                                        <div class = "card-date">
+                                            <span class = "fw-6 d-block">सकिने मिति</span>
+                                            <span class = "text-grey38">17 Apr 2022</span>
+                                        </div>
+                                    </div>
+                                    <div class = "d-flex align-items-center justify-content-between mt-4 pg-block-card-btn-group">
+                                        <button type = "button" class = "d-flex align-items-center pg-block-card-btn border-r-10">
+                                            <span class = "fs-14 text-black-80 me-2">हेनुहोस्</span>
+                                            <img src = "assets/images/icons/view_icon.svg" alt = "">
+                                        </button>
+                                        <button type = "button" class = "d-flex align-items-center pg-block-card-btn border-r-10">
+                                            <span class = "fs-14 text-black-80 me-2">प्रिन्ट गनुहोस</span>
+                                            <img src = "assets/images/icons/print_icon.svg" alt = "">
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="pg-card-status-dropdown position-relative">
+                                    <button type = "button" class = "pg-card-status-dropdown-btn pg-card-status-dropdown-btn-main bg-white d-flex align-items-center justify-content-between mx-auto">
+                                        <img src = "assets/images/intern/circle-icon-blue.svg" class = "pg-card-status-dropdown-img">
+                                        <span class = "pg-card-status-dropdown-text text-capitalize">Done</span>
+                                        <span class = "fs-14 pg-card-status-dropdown-icon"><i class="bi bi-chevron-down"></i></span>
+                                    </button>  
+                                    <div class = "pg-card-status-dropdown-list position-absolute">
+                                        <button type = "button" class = "pg-card-status-dropdown-btn bg-white d-flex align-items-center justify-content-between">
+                                            <img src = "assets/images/intern/circle-icon-blue.svg" class = "pg-card-status-dropdown-img">
+                                            <span class = "pg-card-status-dropdown-text">Done</span>
+                                            <span class = "fs-14 pg-card-status-dropdown-icon"><i class="bi bi-chevron-down"></i></span>
+                                        </button>
+
+                                        <button type = "button" class = "pg-card-status-dropdown-btn bg-white d-flex align-items-center justify-content-between">
+                                            <img src = "assets/images/intern/circle-icon-green.svg" class = "pg-card-status-dropdown-img">
+                                            <span class = "pg-card-status-dropdown-text">pending</span>
+                                            <span class = "fs-14 pg-card-status-dropdown-icon"><i class="bi bi-chevron-down"></i></span>
+                                        </button>
+
+                                        <button type = "button" class = "pg-card-status-dropdown-btn bg-white d-flex align-items-center justify-content-between">
+                                            <img src = "assets/images/intern/circle-icon-red.svg" class = "pg-card-status-dropdown-img">
+                                            <span class = "pg-card-status-dropdown-text">reject</span>
+                                            <span class = "fs-14 pg-card-status-dropdown-icon"><i class="bi bi-chevron-down"></i></span>
+                                        </button>
+                                    </div>
+                                </div> 
+                            </div>
+                        </div>
+                        <!-- end of single card -->
+                        <!-- single card -->
+                        <div class = "col-md-6 col-xl-4 col-xxl-3 p-0 px-3">
+                            <div class = "pg-block-card bg-white py-4 px-3 border-r-10">
+                                <div class = "pg-block-card-top pg-block-cng d-flex align-items-center justify-content-between">
+                                    <div class = "pg-block-card-img">
+                                        <img src = "assets/images/agreement/logo-img.svg" alt = "">
+                                    </div>
+                                    <div class = "pg-block-card-title text-capitalize fw-7 fs-20 text-blue">united nations</div>
+                                    <div class="dropdown pg-block-card-dropdown">
+                                        <button class="btn dropdown-toggle fs-24 pb-0 pe-0 text-dark" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <i class="bi bi-three-dots-vertical"></i>
+                                        </button>
+                                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                                          <li><a class="dropdown-item" href="#"><i class="bi bi-pencil-fill"></i><span class = "ms-2">Edit</span></a></li>
+                                          <li><a class="dropdown-item" href="#"><i class="bi bi-trash3-fill"></i><span class = "ms-2">Delete</span></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class = "pg-block-card-id-info">
+                                    <p class = "m-0">samjhauta-005</p>
+                                </div>
+                                <div class = "pg-block-card-body py-4">
+                                    <div class = "d-flex align-items-center justify-content-between">
+                                        <h5>विवरण</h5>
+                                        <div class = "sm-pills d-flex align-items-center">
+                                            <img src = "assets/images/icons/circle-icon-blue.svg" alt = "">
+                                            <span class = "ms-3 fs-10">Active</span>
+                                        </div>
+                                    </div>
+                                    <p class = "lh-25 text-justify mt-2">आज  २:३० मा गैर अवसीय संस्थ प्लान ईन्टरनेशनल संगको भेटघाट हाल सडक बालबालिकाहरुले भोग्दै आएको समस्यलाई हल गर्ने उदेश्य</p>
+                                </div>
+                                <div class = "pg-block-card-bottom">
+                                    <div class = "d-flex align-items-center justify-content-between mx-3">
+                                        <div class = "card-date">
+                                            <span class = "fw-6 d-block">सम्झौता मिति</span>
+                                            <span class = "text-grey38">17 Apr 2022</span>
+                                        </div>
+                                        <div class = "card-date">
+                                            <span class = "fw-6 d-block">सकिने मिति</span>
+                                            <span class = "text-grey38">17 Apr 2022</span>
+                                        </div>
+                                    </div>
+                                    <div class = "d-flex align-items-center justify-content-between mt-4 pg-block-card-btn-group">
+                                        <button type = "button" class = "d-flex align-items-center pg-block-card-btn border-r-10">
+                                            <span class = "fs-14 text-black-80 me-2">हेनुहोस्</span>
+                                            <img src = "assets/images/icons/view_icon.svg" alt = "">
+                                        </button>
+                                        <button type = "button" class = "d-flex align-items-center pg-block-card-btn border-r-10">
+                                            <span class = "fs-14 text-black-80 me-2">प्रिन्ट गनुहोस</span>
+                                            <img src = "assets/images/icons/print_icon.svg" alt = "">
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="pg-card-status-dropdown position-relative">
+                                    <button type = "button" class = "pg-card-status-dropdown-btn pg-card-status-dropdown-btn-main bg-white d-flex align-items-center justify-content-between mx-auto">
+                                        <img src = "assets/images/intern/circle-icon-blue.svg" class = "pg-card-status-dropdown-img">
+                                        <span class = "pg-card-status-dropdown-text text-capitalize">Done</span>
+                                        <span class = "fs-14 pg-card-status-dropdown-icon"><i class="bi bi-chevron-down"></i></span>
+                                    </button>  
+                                    <div class = "pg-card-status-dropdown-list position-absolute">
+                                        <button type = "button" class = "pg-card-status-dropdown-btn bg-white d-flex align-items-center justify-content-between">
+                                            <img src = "assets/images/intern/circle-icon-blue.svg" class = "pg-card-status-dropdown-img">
+                                            <span class = "pg-card-status-dropdown-text">Done</span>
+                                            <span class = "fs-14 pg-card-status-dropdown-icon"><i class="bi bi-chevron-down"></i></span>
+                                        </button>
+
+                                        <button type = "button" class = "pg-card-status-dropdown-btn bg-white d-flex align-items-center justify-content-between">
+                                            <img src = "assets/images/intern/circle-icon-green.svg" class = "pg-card-status-dropdown-img">
+                                            <span class = "pg-card-status-dropdown-text">pending</span>
+                                            <span class = "fs-14 pg-card-status-dropdown-icon"><i class="bi bi-chevron-down"></i></span>
+                                        </button>
+
+                                        <button type = "button" class = "pg-card-status-dropdown-btn bg-white d-flex align-items-center justify-content-between">
+                                            <img src = "assets/images/intern/circle-icon-red.svg" class = "pg-card-status-dropdown-img">
+                                            <span class = "pg-card-status-dropdown-text">reject</span>
+                                            <span class = "fs-14 pg-card-status-dropdown-icon"><i class="bi bi-chevron-down"></i></span>
+                                        </button>
+                                    </div>
+                                </div> 
+                            </div>
+                        </div>
+                        <!-- end of single card -->
+                        <!-- single card -->
+                        <div class = "col-md-6 col-xl-4 col-xxl-3 p-0 px-3">
+                            <div class = "pg-block-card bg-white py-4 px-3 border-r-10">
+                                <div class = "pg-block-card-top pg-block-cng d-flex align-items-center justify-content-between">
+                                    <div class = "pg-block-card-img">
+                                        <img src = "assets/images/agreement/logo-img.svg" alt = "">
+                                    </div>
+                                    <div class = "pg-block-card-title text-capitalize fw-7 fs-20 text-blue">united nations</div>
+                                    <div class="dropdown pg-block-card-dropdown">
+                                        <button class="btn dropdown-toggle fs-24 pb-0 pe-0 text-dark" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <i class="bi bi-three-dots-vertical"></i>
+                                        </button>
+                                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                                          <li><a class="dropdown-item" href="#"><i class="bi bi-pencil-fill"></i><span class = "ms-2">Edit</span></a></li>
+                                          <li><a class="dropdown-item" href="#"><i class="bi bi-trash3-fill"></i><span class = "ms-2">Delete</span></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class = "pg-block-card-id-info">
+                                    <p class = "m-0">samjhauta-005</p>
+                                </div>
+                                <div class = "pg-block-card-body py-4">
+                                    <div class = "d-flex align-items-center justify-content-between">
+                                        <h5>विवरण</h5>
+                                        <div class = "sm-pills d-flex align-items-center">
+                                            <img src = "assets/images/icons/circle-icon-blue.svg" alt = "">
+                                            <span class = "ms-3 fs-10">Active</span>
+                                        </div>
+                                    </div>
+                                    <p class = "lh-25 text-justify mt-2">आज  २:३० मा गैर अवसीय संस्थ प्लान ईन्टरनेशनल संगको भेटघाट हाल सडक बालबालिकाहरुले भोग्दै आएको समस्यलाई हल गर्ने उदेश्य</p>
+                                </div>
+                                <div class = "pg-block-card-bottom">
+                                    <div class = "d-flex align-items-center justify-content-between mx-3">
+                                        <div class = "card-date">
+                                            <span class = "fw-6 d-block">सम्झौता मिति</span>
+                                            <span class = "text-grey38">17 Apr 2022</span>
+                                        </div>
+                                        <div class = "card-date">
+                                            <span class = "fw-6 d-block">सकिने मिति</span>
+                                            <span class = "text-grey38">17 Apr 2022</span>
+                                        </div>
+                                    </div>
+                                    <div class = "d-flex align-items-center justify-content-between mt-4 pg-block-card-btn-group">
+                                        <button type = "button" class = "d-flex align-items-center pg-block-card-btn border-r-10">
+                                            <span class = "fs-14 text-black-80 me-2">हेनुहोस्</span>
+                                            <img src = "assets/images/icons/view_icon.svg" alt = "">
+                                        </button>
+                                        <button type = "button" class = "d-flex align-items-center pg-block-card-btn border-r-10">
+                                            <span class = "fs-14 text-black-80 me-2">प्रिन्ट गनुहोस</span>
+                                            <img src = "assets/images/icons/print_icon.svg" alt = "">
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="pg-card-status-dropdown position-relative">
+                                    <button type = "button" class = "pg-card-status-dropdown-btn pg-card-status-dropdown-btn-main bg-white d-flex align-items-center justify-content-between mx-auto">
+                                        <img src = "assets/images/intern/circle-icon-blue.svg" class = "pg-card-status-dropdown-img">
+                                        <span class = "pg-card-status-dropdown-text text-capitalize">Done</span>
+                                        <span class = "fs-14 pg-card-status-dropdown-icon"><i class="bi bi-chevron-down"></i></span>
+                                    </button>  
+                                    <div class = "pg-card-status-dropdown-list position-absolute">
+                                        <button type = "button" class = "pg-card-status-dropdown-btn bg-white d-flex align-items-center justify-content-between">
+                                            <img src = "assets/images/intern/circle-icon-blue.svg" class = "pg-card-status-dropdown-img">
+                                            <span class = "pg-card-status-dropdown-text">Done</span>
+                                            <span class = "fs-14 pg-card-status-dropdown-icon"><i class="bi bi-chevron-down"></i></span>
+                                        </button>
+
+                                        <button type = "button" class = "pg-card-status-dropdown-btn bg-white d-flex align-items-center justify-content-between">
+                                            <img src = "assets/images/intern/circle-icon-green.svg" class = "pg-card-status-dropdown-img">
+                                            <span class = "pg-card-status-dropdown-text">pending</span>
+                                            <span class = "fs-14 pg-card-status-dropdown-icon"><i class="bi bi-chevron-down"></i></span>
+                                        </button>
+
+                                        <button type = "button" class = "pg-card-status-dropdown-btn bg-white d-flex align-items-center justify-content-between">
+                                            <img src = "assets/images/intern/circle-icon-red.svg" class = "pg-card-status-dropdown-img">
+                                            <span class = "pg-card-status-dropdown-text">reject</span>
+                                            <span class = "fs-14 pg-card-status-dropdown-icon"><i class="bi bi-chevron-down"></i></span>
+                                        </button>
+                                    </div>
+                                </div> 
+                            </div>
+                        </div>
+                        <!-- end of single card -->
+                        <!-- single card -->
+                        <div class = "col-md-6 col-xl-4 col-xxl-3 p-0 px-3">
+                            <div class = "pg-block-card bg-white py-4 px-3 border-r-10">
+                                <div class = "pg-block-card-top pg-block-cng d-flex align-items-center justify-content-between">
+                                    <div class = "pg-block-card-img">
+                                        <img src = "assets/images/agreement/logo-img.svg" alt = "">
+                                    </div>
+                                    <div class = "pg-block-card-title text-capitalize fw-7 fs-20 text-blue">united nations</div>
+                                    <div class="dropdown pg-block-card-dropdown">
+                                        <button class="btn dropdown-toggle fs-24 pb-0 pe-0 text-dark" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <i class="bi bi-three-dots-vertical"></i>
+                                        </button>
+                                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                                          <li><a class="dropdown-item" href="#"><i class="bi bi-pencil-fill"></i><span class = "ms-2">Edit</span></a></li>
+                                          <li><a class="dropdown-item" href="#"><i class="bi bi-trash3-fill"></i><span class = "ms-2">Delete</span></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class = "pg-block-card-id-info">
+                                    <p class = "m-0">samjhauta-005</p>
+                                </div>
+                                <div class = "pg-block-card-body py-4">
+                                    <div class = "d-flex align-items-center justify-content-between">
+                                        <h5>विवरण</h5>
+                                        <div class = "sm-pills d-flex align-items-center">
+                                            <img src = "assets/images/icons/circle-icon-blue.svg" alt = "">
+                                            <span class = "ms-3 fs-10">Active</span>
+                                        </div>
+                                    </div>
+                                    <p class = "lh-25 text-justify mt-2">आज  २:३० मा गैर अवसीय संस्थ प्लान ईन्टरनेशनल संगको भेटघाट हाल सडक बालबालिकाहरुले भोग्दै आएको समस्यलाई हल गर्ने उदेश्य</p>
+                                </div>
+                                <div class = "pg-block-card-bottom">
+                                    <div class = "d-flex align-items-center justify-content-between mx-3">
+                                        <div class = "card-date">
+                                            <span class = "fw-6 d-block">सम्झौता मिति</span>
+                                            <span class = "text-grey38">17 Apr 2022</span>
+                                        </div>
+                                        <div class = "card-date">
+                                            <span class = "fw-6 d-block">सकिने मिति</span>
+                                            <span class = "text-grey38">17 Apr 2022</span>
+                                        </div>
+                                    </div>
+                                    <div class = "d-flex align-items-center justify-content-between mt-4 pg-block-card-btn-group">
+                                        <button type = "button" class = "d-flex align-items-center pg-block-card-btn border-r-10">
+                                            <span class = "fs-14 text-black-80 me-2">हेनुहोस्</span>
+                                            <img src = "assets/images/icons/view_icon.svg" alt = "">
+                                        </button>
+                                        <button type = "button" class = "d-flex align-items-center pg-block-card-btn border-r-10">
+                                            <span class = "fs-14 text-black-80 me-2">प्रिन्ट गनुहोस</span>
+                                            <img src = "assets/images/icons/print_icon.svg" alt = "">
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="pg-card-status-dropdown position-relative">
+                                    <button type = "button" class = "pg-card-status-dropdown-btn pg-card-status-dropdown-btn-main bg-white d-flex align-items-center justify-content-between mx-auto">
+                                        <img src = "assets/images/intern/circle-icon-blue.svg" class = "pg-card-status-dropdown-img">
+                                        <span class = "pg-card-status-dropdown-text text-capitalize">Done</span>
+                                        <span class = "fs-14 pg-card-status-dropdown-icon"><i class="bi bi-chevron-down"></i></span>
+                                    </button>  
+                                    <div class = "pg-card-status-dropdown-list position-absolute">
+                                        <button type = "button" class = "pg-card-status-dropdown-btn bg-white d-flex align-items-center justify-content-between">
+                                            <img src = "assets/images/intern/circle-icon-blue.svg" class = "pg-card-status-dropdown-img">
+                                            <span class = "pg-card-status-dropdown-text">Done</span>
+                                            <span class = "fs-14 pg-card-status-dropdown-icon"><i class="bi bi-chevron-down"></i></span>
+                                        </button>
+
+                                        <button type = "button" class = "pg-card-status-dropdown-btn bg-white d-flex align-items-center justify-content-between">
+                                            <img src = "assets/images/intern/circle-icon-green.svg" class = "pg-card-status-dropdown-img">
+                                            <span class = "pg-card-status-dropdown-text">pending</span>
+                                            <span class = "fs-14 pg-card-status-dropdown-icon"><i class="bi bi-chevron-down"></i></span>
+                                        </button>
+
+                                        <button type = "button" class = "pg-card-status-dropdown-btn bg-white d-flex align-items-center justify-content-between">
+                                            <img src = "assets/images/intern/circle-icon-red.svg" class = "pg-card-status-dropdown-img">
+                                            <span class = "pg-card-status-dropdown-text">reject</span>
+                                            <span class = "fs-14 pg-card-status-dropdown-icon"><i class="bi bi-chevron-down"></i></span>
+                                        </button>
+                                    </div>
+                                </div> 
+                            </div>
+                        </div>
+                        <!-- end of single card -->
+                        <!-- single card -->
+                        <div class = "col-md-6 col-xl-4 col-xxl-3 p-0 px-3">
+                            <div class = "pg-block-card bg-white py-4 px-3 border-r-10">
+                                <div class = "pg-block-card-top pg-block-cng d-flex align-items-center justify-content-between">
+                                    <div class = "pg-block-card-img">
+                                        <img src = "assets/images/agreement/logo-img.svg" alt = "">
+                                    </div>
+                                    <div class = "pg-block-card-title text-capitalize fw-7 fs-20 text-blue">united nations</div>
+                                    <div class="dropdown pg-block-card-dropdown">
+                                        <button class="btn dropdown-toggle fs-24 pb-0 pe-0 text-dark" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <i class="bi bi-three-dots-vertical"></i>
+                                        </button>
+                                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                                          <li><a class="dropdown-item" href="#"><i class="bi bi-pencil-fill"></i><span class = "ms-2">Edit</span></a></li>
+                                          <li><a class="dropdown-item" href="#"><i class="bi bi-trash3-fill"></i><span class = "ms-2">Delete</span></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class = "pg-block-card-id-info">
+                                    <p class = "m-0">samjhauta-005</p>
+                                </div>
+                                <div class = "pg-block-card-body py-4">
+                                    <div class = "d-flex align-items-center justify-content-between">
+                                        <h5>विवरण</h5>
+                                        <div class = "sm-pills d-flex align-items-center">
+                                            <img src = "assets/images/icons/circle-icon-blue.svg" alt = "">
+                                            <span class = "ms-3 fs-10">Active</span>
+                                        </div>
+                                    </div>
+                                    <p class = "lh-25 text-justify mt-2">आज  २:३० मा गैर अवसीय संस्थ प्लान ईन्टरनेशनल संगको भेटघाट हाल सडक बालबालिकाहरुले भोग्दै आएको समस्यलाई हल गर्ने उदेश्य</p>
+                                </div>
+                                <div class = "pg-block-card-bottom">
+                                    <div class = "d-flex align-items-center justify-content-between mx-3">
+                                        <div class = "card-date">
+                                            <span class = "fw-6 d-block">सम्झौता मिति</span>
+                                            <span class = "text-grey38">17 Apr 2022</span>
+                                        </div>
+                                        <div class = "card-date">
+                                            <span class = "fw-6 d-block">सकिने मिति</span>
+                                            <span class = "text-grey38">17 Apr 2022</span>
+                                        </div>
+                                    </div>
+                                    <div class = "d-flex align-items-center justify-content-between mt-4 pg-block-card-btn-group">
+                                        <button type = "button" class = "d-flex align-items-center pg-block-card-btn border-r-10">
+                                            <span class = "fs-14 text-black-80 me-2">हेनुहोस्</span>
+                                            <img src = "assets/images/icons/view_icon.svg" alt = "">
+                                        </button>
+                                        <button type = "button" class = "d-flex align-items-center pg-block-card-btn border-r-10">
+                                            <span class = "fs-14 text-black-80 me-2">प्रिन्ट गनुहोस</span>
+                                            <img src = "assets/images/icons/print_icon.svg" alt = "">
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="pg-card-status-dropdown position-relative">
+                                    <button type = "button" class = "pg-card-status-dropdown-btn pg-card-status-dropdown-btn-main bg-white d-flex align-items-center justify-content-between mx-auto">
+                                        <img src = "assets/images/intern/circle-icon-blue.svg" class = "pg-card-status-dropdown-img">
+                                        <span class = "pg-card-status-dropdown-text text-capitalize">Done</span>
+                                        <span class = "fs-14 pg-card-status-dropdown-icon"><i class="bi bi-chevron-down"></i></span>
+                                    </button>  
+                                    <div class = "pg-card-status-dropdown-list position-absolute">
+                                        <button type = "button" class = "pg-card-status-dropdown-btn bg-white d-flex align-items-center justify-content-between">
+                                            <img src = "assets/images/intern/circle-icon-blue.svg" class = "pg-card-status-dropdown-img">
+                                            <span class = "pg-card-status-dropdown-text">Done</span>
+                                            <span class = "fs-14 pg-card-status-dropdown-icon"><i class="bi bi-chevron-down"></i></span>
+                                        </button>
+
+                                        <button type = "button" class = "pg-card-status-dropdown-btn bg-white d-flex align-items-center justify-content-between">
+                                            <img src = "assets/images/intern/circle-icon-green.svg" class = "pg-card-status-dropdown-img">
+                                            <span class = "pg-card-status-dropdown-text">pending</span>
+                                            <span class = "fs-14 pg-card-status-dropdown-icon"><i class="bi bi-chevron-down"></i></span>
+                                        </button>
+
+                                        <button type = "button" class = "pg-card-status-dropdown-btn bg-white d-flex align-items-center justify-content-between">
+                                            <img src = "assets/images/intern/circle-icon-red.svg" class = "pg-card-status-dropdown-img">
+                                            <span class = "pg-card-status-dropdown-text">reject</span>
+                                            <span class = "fs-14 pg-card-status-dropdown-icon"><i class="bi bi-chevron-down"></i></span>
+                                        </button>
+                                    </div>
+                                </div> 
+                            </div>
+                        </div>
+                        <!-- end of single card -->
+                        <!-- single card -->
+                        <div class = "col-md-6 col-xl-4 col-xxl-3 p-0 px-3">
+                            <div class = "pg-block-card bg-white py-4 px-3 border-r-10">
+                                <div class = "pg-block-card-top pg-block-cng d-flex align-items-center justify-content-between">
+                                    <div class = "pg-block-card-img">
+                                        <img src = "assets/images/agreement/logo-img.svg" alt = "">
+                                    </div>
+                                    <div class = "pg-block-card-title text-capitalize fw-7 fs-20 text-blue">united nations</div>
+                                    <div class="dropdown pg-block-card-dropdown">
+                                        <button class="btn dropdown-toggle fs-24 pb-0 pe-0 text-dark" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <i class="bi bi-three-dots-vertical"></i>
+                                        </button>
+                                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                                          <li><a class="dropdown-item" href="#"><i class="bi bi-pencil-fill"></i><span class = "ms-2">Edit</span></a></li>
+                                          <li><a class="dropdown-item" href="#"><i class="bi bi-trash3-fill"></i><span class = "ms-2">Delete</span></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class = "pg-block-card-id-info">
+                                    <p class = "m-0">samjhauta-005</p>
+                                </div>
+                                <div class = "pg-block-card-body py-4">
+                                    <div class = "d-flex align-items-center justify-content-between">
+                                        <h5>विवरण</h5>
+                                        <div class = "sm-pills d-flex align-items-center">
+                                            <img src = "assets/images/icons/circle-icon-blue.svg" alt = "">
+                                            <span class = "ms-3 fs-10">Active</span>
+                                        </div>
+                                    </div>
+                                    <p class = "lh-25 text-justify mt-2">आज  २:३० मा गैर अवसीय संस्थ प्लान ईन्टरनेशनल संगको भेटघाट हाल सडक बालबालिकाहरुले भोग्दै आएको समस्यलाई हल गर्ने उदेश्य</p>
+                                </div>
+                                <div class = "pg-block-card-bottom">
+                                    <div class = "d-flex align-items-center justify-content-between mx-3">
+                                        <div class = "card-date">
+                                            <span class = "fw-6 d-block">सम्झौता मिति</span>
+                                            <span class = "text-grey38">17 Apr 2022</span>
+                                        </div>
+                                        <div class = "card-date">
+                                            <span class = "fw-6 d-block">सकिने मिति</span>
+                                            <span class = "text-grey38">17 Apr 2022</span>
+                                        </div>
+                                    </div>
+                                    <div class = "d-flex align-items-center justify-content-between mt-4 pg-block-card-btn-group">
+                                        <button type = "button" class = "d-flex align-items-center pg-block-card-btn border-r-10">
+                                            <span class = "fs-14 text-black-80 me-2">हेनुहोस्</span>
+                                            <img src = "assets/images/icons/view_icon.svg" alt = "">
+                                        </button>
+                                        <button type = "button" class = "d-flex align-items-center pg-block-card-btn border-r-10">
+                                            <span class = "fs-14 text-black-80 me-2">प्रिन्ट गनुहोस</span>
+                                            <img src = "assets/images/icons/print_icon.svg" alt = "">
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="pg-card-status-dropdown position-relative">
+                                    <button type = "button" class = "pg-card-status-dropdown-btn pg-card-status-dropdown-btn-main bg-white d-flex align-items-center justify-content-between mx-auto">
+                                        <img src = "assets/images/intern/circle-icon-blue.svg" class = "pg-card-status-dropdown-img">
+                                        <span class = "pg-card-status-dropdown-text text-capitalize">Done</span>
+                                        <span class = "fs-14 pg-card-status-dropdown-icon"><i class="bi bi-chevron-down"></i></span>
+                                    </button>  
+                                    <div class = "pg-card-status-dropdown-list position-absolute">
+                                        <button type = "button" class = "pg-card-status-dropdown-btn bg-white d-flex align-items-center justify-content-between">
+                                            <img src = "assets/images/intern/circle-icon-blue.svg" class = "pg-card-status-dropdown-img">
+                                            <span class = "pg-card-status-dropdown-text">Done</span>
+                                            <span class = "fs-14 pg-card-status-dropdown-icon"><i class="bi bi-chevron-down"></i></span>
+                                        </button>
+
+                                        <button type = "button" class = "pg-card-status-dropdown-btn bg-white d-flex align-items-center justify-content-between">
+                                            <img src = "assets/images/intern/circle-icon-green.svg" class = "pg-card-status-dropdown-img">
+                                            <span class = "pg-card-status-dropdown-text">pending</span>
+                                            <span class = "fs-14 pg-card-status-dropdown-icon"><i class="bi bi-chevron-down"></i></span>
+                                        </button>
+
+                                        <button type = "button" class = "pg-card-status-dropdown-btn bg-white d-flex align-items-center justify-content-between">
+                                            <img src = "assets/images/intern/circle-icon-red.svg" class = "pg-card-status-dropdown-img">
+                                            <span class = "pg-card-status-dropdown-text">reject</span>
+                                            <span class = "fs-14 pg-card-status-dropdown-icon"><i class="bi bi-chevron-down"></i></span>
+                                        </button>
+                                    </div>
+                                </div> 
+                            </div>
+                        </div>
+                        <!-- end of single card -->
+                        <!-- single card -->
+                        <div class = "col-md-6 col-xl-4 col-xxl-3 p-0 px-3">
+                            <div class = "pg-block-card bg-white py-4 px-3 border-r-10">
+                                <div class = "pg-block-card-top pg-block-cng d-flex align-items-center justify-content-between">
+                                    <div class = "pg-block-card-img">
+                                        <img src = "assets/images/agreement/logo-img.svg" alt = "">
+                                    </div>
+                                    <div class = "pg-block-card-title text-capitalize fw-7 fs-20 text-blue">united nations</div>
+                                    <div class="dropdown pg-block-card-dropdown">
+                                        <button class="btn dropdown-toggle fs-24 pb-0 pe-0 text-dark" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <i class="bi bi-three-dots-vertical"></i>
+                                        </button>
+                                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                                          <li><a class="dropdown-item" href="#"><i class="bi bi-pencil-fill"></i><span class = "ms-2">Edit</span></a></li>
+                                          <li><a class="dropdown-item" href="#"><i class="bi bi-trash3-fill"></i><span class = "ms-2">Delete</span></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class = "pg-block-card-id-info">
+                                    <p class = "m-0">samjhauta-005</p>
+                                </div>
+                                <div class = "pg-block-card-body py-4">
+                                    <div class = "d-flex align-items-center justify-content-between">
+                                        <h5>विवरण</h5>
+                                        <div class = "sm-pills d-flex align-items-center">
+                                            <img src = "assets/images/icons/circle-icon-blue.svg" alt = "">
+                                            <span class = "ms-3 fs-10">Active</span>
+                                        </div>
+                                    </div>
+                                    <p class = "lh-25 text-justify mt-2">आज  २:३० मा गैर अवसीय संस्थ प्लान ईन्टरनेशनल संगको भेटघाट हाल सडक बालबालिकाहरुले भोग्दै आएको समस्यलाई हल गर्ने उदेश्य</p>
+                                </div>
+                                <div class = "pg-block-card-bottom">
+                                    <div class = "d-flex align-items-center justify-content-between mx-3">
+                                        <div class = "card-date">
+                                            <span class = "fw-6 d-block">सम्झौता मिति</span>
+                                            <span class = "text-grey38">17 Apr 2022</span>
+                                        </div>
+                                        <div class = "card-date">
+                                            <span class = "fw-6 d-block">सकिने मिति</span>
+                                            <span class = "text-grey38">17 Apr 2022</span>
+                                        </div>
+                                    </div>
+                                    <div class = "d-flex align-items-center justify-content-between mt-4 pg-block-card-btn-group">
+                                        <button type = "button" class = "d-flex align-items-center pg-block-card-btn border-r-10">
+                                            <span class = "fs-14 text-black-80 me-2">हेनुहोस्</span>
+                                            <img src = "assets/images/icons/view_icon.svg" alt = "">
+                                        </button>
+                                        <button type = "button" class = "d-flex align-items-center pg-block-card-btn border-r-10">
+                                            <span class = "fs-14 text-black-80 me-2">प्रिन्ट गनुहोस</span>
+                                            <img src = "assets/images/icons/print_icon.svg" alt = "">
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="pg-card-status-dropdown position-relative">
+                                    <button type = "button" class = "pg-card-status-dropdown-btn pg-card-status-dropdown-btn-main bg-white d-flex align-items-center justify-content-between mx-auto">
+                                        <img src = "assets/images/intern/circle-icon-blue.svg" class = "pg-card-status-dropdown-img">
+                                        <span class = "pg-card-status-dropdown-text text-capitalize">Done</span>
+                                        <span class = "fs-14 pg-card-status-dropdown-icon"><i class="bi bi-chevron-down"></i></span>
+                                    </button>  
+                                    <div class = "pg-card-status-dropdown-list position-absolute">
+                                        <button type = "button" class = "pg-card-status-dropdown-btn bg-white d-flex align-items-center justify-content-between">
+                                            <img src = "assets/images/intern/circle-icon-blue.svg" class = "pg-card-status-dropdown-img">
+                                            <span class = "pg-card-status-dropdown-text">Done</span>
+                                            <span class = "fs-14 pg-card-status-dropdown-icon"><i class="bi bi-chevron-down"></i></span>
+                                        </button>
+
+                                        <button type = "button" class = "pg-card-status-dropdown-btn bg-white d-flex align-items-center justify-content-between">
+                                            <img src = "assets/images/intern/circle-icon-green.svg" class = "pg-card-status-dropdown-img">
+                                            <span class = "pg-card-status-dropdown-text">pending</span>
+                                            <span class = "fs-14 pg-card-status-dropdown-icon"><i class="bi bi-chevron-down"></i></span>
+                                        </button>
+
+                                        <button type = "button" class = "pg-card-status-dropdown-btn bg-white d-flex align-items-center justify-content-between">
+                                            <img src = "assets/images/intern/circle-icon-red.svg" class = "pg-card-status-dropdown-img">
+                                            <span class = "pg-card-status-dropdown-text">reject</span>
+                                            <span class = "fs-14 pg-card-status-dropdown-icon"><i class="bi bi-chevron-down"></i></span>
+                                        </button>
+                                    </div>
+                                </div> 
+                            </div>
+                        </div>
+                        <!-- end of single card -->
+                    </div>
+                </div>
+            </div>
+            <!-- end of block 1 -->
+        </div>
+
+        <footer class = "pg-footer px-3 py-4 bg-lightblue border-black-20">
+            <div class = "container">  
+                <a href = "dashboard.html" class = "d-flex align-items-center justify-content-center pg-nav-brand pg-nav-brand-footer">
+                    <img src = "assets/images/site_logo.svg" alt = "site logo">
+                    <div class = "pg-nav-brand-text">
+                        <span class = "d-block fs-22">समाज कल्याण परिषद्</span>
+                        <span class = "text-blue fw-7 fs-35">सचिवलय</span>
+                    </div>
+                </a>
+            </div>
+        </footer>
+    </div>
+
+
+    <!-- scripts -->
+    <script src = "assets/js/jquery-3.6.0.js"></script>
+    <script src = "assets/bootstrap-5.0.2-dist/js/bootstrap.bundle.js"></script>
+    <script src = "assets/js/script.js"></script>
+</body>
+</html>
